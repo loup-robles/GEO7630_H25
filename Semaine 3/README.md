@@ -90,50 +90,9 @@ Le cours approfondit également les diverses formes de représentation adaptées
 | **Laboratoires**                       | 20%             | 15 avril 2025        |
 ---
 
-## Précisions sur les travaux pratiques (1–3)
-
-Les travaux pratiques représentent les trois étapes d’un travail global : 
-- Identification de la problématique et des données sources.
-- Intégration et modélisation des données.
-- Visualisation et diffusion des données.
-
-## Barème de conversion des notes du Département de Géographie (2ème Cycle) :
-
-A+: 90 à 100 %
-A: 85 à 89 %
-A-: 80 à 84%
-B+: 77 à 79 %
-B: 73 à 76 %
-B-: 70 à 72 %
-C+: 67 à 69 %
-C: 63 à 66 %
-E : 0 à 62 %
-
-
-Pour plus d’informations sur les autres règlements et politiques de l’UQAM : http://www.instances.uqam.ca/reglements/titre.html
-
-## Précisions sur les travaux :
-
-Respect de la ponctualité au niveau de la remise des travaux : 
-- les travaux sont exigés à des dates précises (voir la section "Contenu et calendrier des activités" ci-dessous). 
-- Une pénalité de 5 % par jour pour retard non justifié sera mise en application [Exemple : Soit un travail pratique noté sur 25 points, un retard d’un jour implique une pénalité de 1,45 point (c’est-à-dire 25 points X 0,05 X 1 jour = 1,45 point), un retard de deux (2) jours, une pénalité de 2,90 points (25 points X 0,05 X 2 jours = 2,90 points), etc.].
-
-## Précisions sur les périodes de laboratoire :
-
-- Les périodes de laboratoire, sous la supervision d'un démonstrateur, permettront aux étudiants, à l’aide de démonstrations et l’utilisation de logiciels appropriés, d’être en mesure de bien connaître, utiliser et appliquer les outils de traitement de l’information et de cartographie.
-
-- Chaque période de laboratoire sera accompagnée  
-
-## Précisions sur les invités et sorties de terrain :
-
-- Un ou plusieurs invités pourront venir étoffer le cours en venant proposer des présentations et ou des démonstrations durant la session, il se peut qu’une heure de cours ou de laboratoire soit retranchée pour les invités.
-
-- Néanmoins toute la matière de cette heure de cours sera rattrapée. Une sortie de terrain, date à déterminer, est envisagée durant la session pour assister à un “GeoMeetUp” cette sortie de terrain se déroulera sur les heures de cours. Néanmoins toute la matière du cours sera rattrapée. 
-
-
 ## 📚 Notes et documentation
 
-Les présentations seront disponibles sur **GitHub**.
+Les présentations seront disponibles sur **Moodle** et **GitHub**.
 Les références bibliographiques et ressources additionnelles seront ajoutées dans chaque capsule de cours.
 
 ---
