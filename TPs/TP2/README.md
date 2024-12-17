@@ -46,12 +46,15 @@ TP2/
 ├── data/            # Données d'entrée et de sortie
 └── sql/             # Scripts SQL si nécessaire
 ```
+![alt text](image.png)
 
 ### **2. Workbench FME**
 - Toutes les opérations doivent être regroupées dans un seul fichier **tp2.fmw**.
 - Le fichier doit être **structuré et annoté** :
   - Utilisez des **bookmarks** pour regrouper les processus.
   - Ajoutez des commentaires pour expliquer les transformateurs utilisés.
+
+![alt text](image-1.png)
 
 #### **Processus requis** :
 1. **Validation des données** : Vérifiez les attributs et la géométrie.
@@ -66,6 +69,8 @@ TP2/
 - Réalisez un schéma clair et simplifié de votre processus **ETL/ELT**.
 - Outil recommandé : **draw.io** ou tout autre logiciel équivalent.
 - Le schéma doit être inclus dans le dossier **schema/** et dans le **README.md**.
+
+![alt text](image-2.png)
 
 ---
 

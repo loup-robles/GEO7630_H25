@@ -141,6 +141,10 @@ Les données requises pour votre problématique doivent inclure :
 
 ---
 
+## Exemples de réalisation
+
+![alt text](image.png)
+
 ## 📑 Matériel à rendre
 Un document **PDF** contenant :
 1. **Description explicative** de votre problématique (350 mots) incluant :
