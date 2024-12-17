@@ -3,6 +3,14 @@
 ## 🗓️ Date
 - **7 janvier 2025**
 
+## 📋 Sondage - Connaissance de la cohorte
+
+Veuillez remplir ce **sondage rapide** afin de mieux comprendre la composition de la cohorte et ajuster le contenu du cours.
+
+[📝 Accéder au sondage sur Office Forms](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=Gk7LEtpCHEmQ4Xp6l1NQb71XcEOenuFOjUSiC1Cu-_tURjNTRFVQVkUyRVFCUUhGSzJKWEI4QVFWUy4u&Token=77f61c34661d4b4b89b0dfe8708b831c)
+
+---
+
 ## 🎯 Objectifs du cours 1
 1. Présentation du plan de cours et des objectifs généraux.
 2. Évaluation des acquis des étudiants en visualisation et intégration de données.
