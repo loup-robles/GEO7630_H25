@@ -1,13 +1,14 @@
 # 📚 GEO 7630 - TP1 : Identification de la problématique et acquisition des données
 
 ## 🗓️ Date de remise
-- **Dimanche 28 janvier 2024 à 17h**
+- **Dimanche 25 janvier 2025 à 17h**
 
 ## 🎯 Objectif du TP1
 Ce premier travail pratique vise à :
 1. **Identifier une problématique** de travail qui servira de fil conducteur pour la session.
 2. **Acquérir et organiser les données sources** nécessaires pour les futures analyses.
-3. Développer des compétences dans la recherche de données géospatiales pertinentes et leur documentation.
+3. **Développer des compétences dans la recherche** de données géospatiales pertinentes et leur documentation.
+4. **Commencer à maitriser l'outil central du cours : Github**
 
 ---
 
@@ -28,11 +29,11 @@ La problématique choisie doit :
   - **Tourisme, sports et loisirs**
   - **Transport**
 - Contenir les éléments suivants :
-  - **Une composante temporelle** : période d’analyse.
-  - **Une composante spatiale** : localisation précise des données.
-  - **Des composantes qualitatives** (ex. codes postaux, qualité de l'air).
-  - **Des composantes quantitatives** (ex. nombre d’habitants, fréquentation).
-  - **Une composante analytique** combinant qualitatif et quantitatif (ex. pourcentage d’utilisation des pistes cyclables par secteur).
+  - [ ] **Une composante temporelle** : période d’analyse.
+  - [ ] **Une composante spatiale** : localisation précise des données.
+  - [ ] **Des composantes qualitatives** (ex. codes postaux, qualité de l'air).
+  - [ ] **Des composantes quantitatives** (ex. nombre d’habitants, fréquentation).
+  - [ ] **Une composante analytique** combinant qualitatif et quantitatif (ex. pourcentage d’utilisation des pistes cyclables par secteur).
 - Être accompagnée d’un texte explicatif de **+/- 350 mots** comprenant :
   - L’**orientation générale** de la problématique.
   - Les **analyses prévues**.
@@ -43,15 +44,63 @@ La problématique choisie doit :
 
 ### **2. Acquisition des données sources**
 Les données requises pour votre problématique doivent inclure :
-- **Une ou plusieurs images aériennes** (format libre).
-- **Données vectorielles qualitatives** (ex. limites administratives).
-- **Données vectorielles quantitatives** (ex. statistiques par secteur).
-- **Données vectorielles avec une variable 3D** (ex. bâtiments avec hauteur, arbres).
+- [ ] **Une ou plusieurs images aériennes** (format libre).
+- [ ] **Données vectorielles qualitatives** (ex. limites administratives).
+- [ ] **Données vectorielles quantitatives** (ex. statistiques par secteur).
+- [ ] **Données vectorielles avec une variable 3D** (ex. bâtiments avec hauteur, arbres).
 
 #### **Sources recommandées**
 - **Portail des données ouvertes de la Ville de Montréal** : [Données Montréal](https://donnees.montreal.ca/)
 
 ---
+
+
+## Exemples de réalisation
+
+![alt text](image.png)
+
+## 📑 Matériel à rendre
+Un dépot **Github** contenant :
+1. **Description explicative** de votre problématique (350 mots) incluant :
+   - Orientation générale de votre travail de session
+   - Analyses spatiales prévues à haut niveau.
+   - Types de visualisation envisagées.
+   - Intérêt du tableau de bord, c'est à dire à quoi va servir votre travail.
+2. **Sources des données** :
+   - Liens vers les jeux de données du **portail des données ouvertes de Montréal**.
+   - Références des problématiques abordées.
+
+---
+
+## 🧾 Grille d’évaluation
+| Critère                                | Pondération   |
+|---------------------------------------|--------------:|
+| **Choix du thème et de la problématique**   | 20%          |
+| **Choix et respect des jeux de données** | 50%          |
+| **Qualité des jeux de données**       | 15%          |
+| **Complexité de la réalisation**      | 15%          |
+
+### **Détails des critères**
+- **Thème et problématique** : Originalité et pertinence du choix.
+- **Jeux de données** : Respect des composantes (temporelle, spatiale, qualitative, quantitative).
+- **Qualité des données** : Cohérence et complexité des sources sélectionnées.
+- **Niveau de complexité** :
+  - **Facile (5%)** : Analyse simple, non jointe.
+  - **Moyen (7.5%)** : Jointure spatiale simple.
+  - **Difficile (15%)** : Intersection ou jointure multicritère.
+
+---
+
+## 🚀 Conseils
+1. **Sélectionnez une problématique précise** avec un potentiel analytique clair.
+2. **Validez vos jeux de données** pour qu’ils respectent les exigences.
+3. **Documentez vos sources et votre réflexion** de manière rigoureuse.
+
+---
+
+**Bonne chance pour ce premier travail pratique !**
+
+
 
 ## 📂 Sujets exemples
 
@@ -140,48 +189,3 @@ Les données requises pour votre problématique doivent inclure :
   - Évaluer les initiatives de transport durable et leur impact sur la qualité de vie.
 
 ---
-
-## Exemples de réalisation
-
-![alt text](image.png)
-
-## 📑 Matériel à rendre
-Un document **PDF** contenant :
-1. **Description explicative** de votre problématique (350 mots) incluant :
-   - Orientation générale.
-   - Analyses prévues.
-   - Types de visualisation envisagés.
-   - Intérêt du tableau de bord.
-2. **Sources des données** :
-   - Liens vers les jeux de données du **portail des données ouvertes de Montréal**.
-   - Références des problématiques abordées.
-
----
-
-## 🧾 Grille d’évaluation
-| Critère                                | Pondération   |
-|---------------------------------------|--------------:|
-| **Choix du thème et problématique**   | 20%          |
-| **Choix et respect des jeux de données** | 50%          |
-| **Qualité des jeux de données**       | 15%          |
-| **Complexité de la réalisation**      | 15%          |
-
-### **Détails des critères**
-- **Thème et problématique** : Originalité et pertinence du choix.
-- **Jeux de données** : Respect des composantes (temporelle, spatiale, qualitative, quantitative).
-- **Qualité des données** : Cohérence et complexité des sources sélectionnées.
-- **Niveau de complexité** :
-  - **Facile (5%)** : Analyse simple, non jointe.
-  - **Moyen (7.5%)** : Jointure spatiale simple.
-  - **Difficile (15%)** : Intersection ou jointure multicritère.
-
----
-
-## 🚀 Conseils
-1. **Sélectionnez une problématique précise** avec un potentiel analytique clair.
-2. **Validez vos jeux de données** pour qu’ils respectent les exigences.
-3. **Documentez vos sources et votre réflexion** de manière rigoureuse.
-
----
-
-**Bonne chance pour ce premier travail pratique !**
