@@ -1,39 +1,14 @@
 # 📚 GEO 7630 - Laboratoire 1 : Prise en main des outils
 
 ## 🎯 Objectif du laboratoire
-Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour le cours **GEO 7630**. Vous apprendrez à créer un environnement de travail collaboratif, accéder à une base de données, manipuler des données géospatiales, et visualiser ces données dans un SIG.
+- Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour le cours **GEO 7630**. .
+- Vous apprendrez à créer un environnement de travail collaboratif, accéder à une base de données, manipuler des données géospatiales, et visualiser ces données dans un SIG.
 
 ---
 
 ## 📝 Tâches à réaliser
 
-### **1. Créer un compte GitHub**
-- Rendez-vous sur [GitHub](https://github.com/) et créez un compte si ce n'est pas déjà fait.
-- **Configurer un Codespace** (environnement de développement dans GitHub).
-
-#### **Étapes pour lancer un Codespace**
-1. Connectez-vous à votre compte GitHub.
-2. Créez un nouveau repository (nommez-le `geo7630-lab1`).
-3. Accédez à l’onglet **Codespaces** dans votre repository.
-4. Lancez un nouvel environnement Codespace.
-
----
-
-### **2. Se connecter avec DBeaver à la base de données Amazon**
-- **Télécharger et installer DBeaver** : [DBeaver Community](https://dbeaver.io/download/)
-- **Paramètres de connexion** :
-  - **Type de base de données** : PostgreSQL
-  - **Host** : (Adresse fournie en classe)
-  - **Port** : 5432
-  - **Utilisateur** : (Identifiant fourni)
-  - **Mot de passe** : (Mot de passe fourni)
-  - **Base de données** : `geo7630`
-
-- **Objectif** : Vérifiez que la connexion à la base de données est fonctionnelle et que vous pouvez visualiser les tables existantes.
-
----
-
-### **3. Lancer FME Desktop**
+### **1. Lancer FME Desktop**
 - **FME Desktop** est un outil ETL (Extract, Transform, Load) pour le traitement des données géospatiales.
 - **Tâche** :
   1. Ouvrez **FME Workbench**.
@@ -41,14 +16,18 @@ Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour
 
 ---
 
-### **4. Lire une adresse depuis un fichier CSV avec lat/long**
-- **Fichier d'entrée** : Préparez un fichier CSV contenant :
+### **2. Lire une adresse depuis un fichier CSV hébergé avec lat/long**
+- **Fichier d'entrée** : [Établissements alimentaires Mtl](https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/28a4957d-732e-48f9-8adb-0624867d9bb0/download/businesses.csv)
   - **Adresse**
   - **Latitude**
   - **Longitude**
 
 #### **Étapes dans FME** :
-1. Utilisez le **Reader** pour importer le fichier CSV.
+1. Utilisez le **Reader** pour importer les données csv .
+
+![1](https://lh7-us.googleusercontent.com/V7kW6zmLQymgwC9VvNCUxQXzYeoOipqdeM5kzuZWKkske-KUgof_zsQDpi3bWlNwQlZmG8UTt1h31belHIsG-GfofLfXKIvgS_pzh46MuMLDKC1Hv85vf1o_3-5KIgxNm3GAwCPC9w1owobd6gOFdMI)
+
+
 2. Vérifiez que les colonnes **lat** et **long** sont correctement reconnues comme attributs.
 3. Convertissez ces données en **données vectorielles** (points).
 
@@ -81,8 +60,6 @@ Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour
 ## 📝 Matériel à remettre
 1. **Dépôt GitHub** :
    - Incluez un **README.md** documentant les étapes effectuées.
-   - Déposez le fichier **FME Workbench (.fmw)**.
-   - Ajoutez le fichier **CSV d'entrée** utilisé.
 2. **Capture d’écran QGIS** montrant la table importée et visualisée sur la carte.
 
 ---
@@ -117,3 +94,32 @@ Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour
 ---
 
 **Bon début de session et bon laboratoire !** 🚀
+
+
+
+
+---------------
+
+### **1. Créer un compte GitHub**
+- Rendez-vous sur [GitHub](https://github.com/) et créez un compte si ce n'est pas déjà fait.
+- **Configurer un Codespace** (environnement de développement dans GitHub).
+
+#### **Étapes pour lancer un Codespace**
+1. Connectez-vous à votre compte GitHub.
+2. Créez un nouveau repository (nommez-le `geo7630-lab1`).
+3. Accédez à l’onglet **Codespaces** dans votre repository.
+4. Lancez un nouvel environnement Codespace.
+
+### **2. Se connecter avec DBeaver à la base de données Amazon**
+- **Télécharger et installer DBeaver** : [DBeaver Community](https://dbeaver.io/download/)
+- **Paramètres de connexion** :
+  - **Type de base de données** : PostgreSQL
+  - **Host** : (Adresse fournie en classe)
+  - **Port** : 5432
+  - **Utilisateur** : (Identifiant fourni)
+  - **Mot de passe** : (Mot de passe fourni)
+  - **Base de données** : `geo7630`
+
+- **Objectif** : Vérifiez que la connexion à la base de données est fonctionnelle et que vous pouvez visualiser les tables existantes.
+
+---
