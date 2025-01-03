@@ -1,110 +1,97 @@
-# 📊 GEO 7630 - Intégration et visualisation des données géographiques
+# 📚 GEO 7630 - Cours 3 : Intégration et visualisation des données vectorielles
 
-## 📅 Horaire
-- **Cours** : Mardi 17h30 - 20h30 (A-4160)
-- **Laboratoire** : Mardi 20h30 - 22h30 (A-4160)
+## 🗓️ Date
+- **21 janvier 2025**
 
-## 👨‍🏫 Professeur
-- **Clément Glogowski**  
-  Email : [glogowski.clement@uqam.ca](mailto:glogowski.clement@uqam.ca)
-
-## 📝 Description du cours
-
-Méthodes d'intégration de données cartographiques numériques et de données de télédétection, présentation combinée. Production de cartes, cartes-images, animations et autres documents de visualisation du territoire, dans une optique de visualisation, en s'appuyant sur des notions de perception visuelle et sur l'approche **«communication»** en cartographie.
-
-Présentation de données en deux et trois dimensions, ainsi que des modèles altimétriques. Apprentissage des outils permettant d'exploiter au maximum les possibilités de représentation graphique offertes par les méthodes nouvelles et traditionnelles de visualisation de données géoréférencées.
-
-Le cours approfondit également les diverses formes de représentation adaptées aux données à référence spatiale dans le web. Les principes de **sémiologie graphique** seront abordés afin de choisir les bonnes représentations pour les données requises. Ce cours comporte une part importante de **travaux pratiques**.
+## 🎯 Objectifs du cours 3
+1. Comprendre les **données vectorielles** et leurs usages.
+2. Explorer les concepts d'**intégration** et de **visualisation**.
+3. Identifier les **défis** et les **bonnes pratiques** pour intégrer les données vectorielles.
+4. Introduction aux **tuiles vectorielles** et à leur utilisation dans la cartographie web.
+5. Atelier pratique : prise en main des outils pour le **TP2**.
 
 ---
 
-## 🎯 Objectifs spécifiques
+## 📋 Contenu du cours
 
-1. Approfondir les aspects de **publication cartographique sur Internet** en tenant compte des avancées technologiques.
-2. Maîtriser les concepts et techniques d'**ETL**.
-3. Visualiser et modéliser les données **2D et 3D**.
-4. Comprendre les processus de publication cartographique en milieu organisationnel.
-5. Comprendre et appliquer les bonnes pratiques d'**UI/UX**.
-6. Concevoir et réaliser un site web en géomatique avec des bases en programmation applicative : **HTML, CSS, JavaScript, API, Git**.
-7. Introduction à l'architecture d'une application web.
+### **1. Données vectorielles**
+- **Définition** : Points, lignes et polygones.
+- **Applications** : Cartographie interactive, modélisation spatiale.
+- **Défis** :
+  - Hétérogénéité et incohérence des données.
+  - Vérification et validation.
 
----
+### **2. Tuiles vectorielles : Introduction**
+- **Qu'est-ce qu'une tuile vectorielle ?**
+  - Représentation numérique des données géographiques en format vectoriel.
+  - Permet un chargement rapide et une haute qualité lors du zoom.
+- **Chronologie des tuiles vectorielles** :
+  - 1980-1990 : Besoin de stockage efficace.
+  - 2010 : Adoption par Google Maps API.
+  - 2020-2024 : Standardisation OGC, utilisation de WebGL.
+- **Avantages des tuiles vectorielles** :
+  - Qualité d'image élevée.
+  - Performances optimisées (3x plus rapides).
+  - Interactivité et style dynamique à la volée.
 
-## 🛠️ Logiciels et bibliothèques utilisés
+### **3. Concepts d'intégration des données vectorielles**
+1. **Collecte et récupération** des données :
+   - Connexion directe à la source pour éviter les téléchargements répétitifs.
+2. **Conversion** : Formats interopérables (FME, GDAL/OGR).
+3. **Vérification et validation** :
+   - Assurer la qualité, la précision et la performance des données.
+4. **Persistance** :
+   - Centralisation, permissions, indexation et scalabilité.
+5. **Diffusion** :
+   - Transparence, accessibilité en temps réel.
 
-### **Outils ETL**
-- FME
-- GDAL
+### **4. Défis et enjeux**
+- **Hétérogénéité** : Sources et formats multiples.
+- **Incohérence** : Vérification des attributs et corrections nécessaires.
+- **Performance** : Gestion des grandes quantités de données.
+- **Sécurité** : Anonymisation et protection des données sensibles.
+- **Coût** : Automatisation avec des pratiques DevOps.
 
-### **Visualisation 2D et 3D**
-- QGIS / ArcGIS Pro
-- Cloud Compare
-- MapLibreGL
-- TurfJS
-- Potree / Itowns / Cesium
-
-### **Serveurs cartographiques**
-- GeoServer
-- PostgreSQL + PostGIS
-- Pg_featureserv, Pg_tileserv
-
-### **Infrastructure technologique / T.I**
-- Docker
-- GitHub
-- Visual Studio
-
----
-
-## 🏫 Structure du cours et calendrier
-
-| **Date**            | **Thème**                                                 | **Évaluation / TP**                   |
-|---------------------|----------------------------------------------------------|--------------------------------------|
-| **7 janvier 2025**  | Introduction, plan de cours, TP1                         | Présentation TP1                     |
-| **14 janvier 2025** | Perception visuelle, UI/UX, animations                   | Accompagnement TP1                   |
-| **21 janvier 2025** | Visualisation des données vectorielles 2D               | Nettoyage, projection, visualisation |
-| **28 janvier 2025** | Visualisation des données matricielles **TP1 Dû**       | Accompagnement TP2                   |
-| **4 février 2025**  | Données LiDAR et visualisation 3D (Jakarto, terrain)     | Visualisation 3D                     |
-| **11 février 2025** | ArcGIS Online : Sémiologie, UI/UX                       | Création d'une webmap                |
-| **18 février 2025** | ArcGIS Online : Dashboards, Experience Builder          | TP2 en progression                   |
-| **25 février 2025** | Examen intra **TP2 Dû**                                 | -                                    |
-| **4 mars 2025**     | Relâche                                                 | -                                    |
-| **11 mars 2025**    | Webmapping open source : OGC, GeoServer, PostGIS        | Diffusion de données                 |
-| **18 mars 2025**    | Webmapping (Front-end) : HTML, CSS, JS, API             | Développement cartographique         |
-| **25 mars 2025**    | Webmapping (Back-end) : Docker, PostgreSQL/PostGIS      | Développement intermédiaire          |
-| **1 avril 2025**    | Concepts avancés de webmapping  pt1                     | Visualisation avancée                |
-| **8 avril 2025**    | Concepts avancés de webmapping pt2                      | Préparation à la mise en production                                   |
-| **15 avril 2025**   | Révisions et aide au TP3                                | -                                    |
-| **22 avril 2025**   | Examen final                                     | Évaluation finale                    |
+### **5. Atelier : Prise en main des outils**
+- **Objectif** : Intégrer et visualiser des données vectorielles.
+- **Outils utilisés** :
+  - **FME** pour l'intégration ETL.
+  - **QGIS** pour la visualisation.
+  - **Mapbox** pour l'utilisation des tuiles vectorielles.
 
 ---
 
-## 🧪 Évaluations
-
-| **Travail/Examen**                     | **Pondération** | **Échéance**         |
-|----------------------------------------|-----------------|----------------------|
-| **TP1** - Problématique et données     | 5%              | 28 janvier 2025      |
-| **TP2** - Intégration vectorielle      | 15%             | 4 mars 2025          |
-| **TP3** - Développement app web        | 20%             | 15 avril 2025        |
-| **Examen intra**                       | 20%             | 4 mars 2025          |
-| **Examen final**                       | 20%             | 15 avril 2025        |
-| **Laboratoires**                       | 20%             | 15 avril 2025        |
----
-
-## 📚 Notes et documentation
-
-Les présentations seront disponibles sur **Moodle** et **GitHub**.
-Les références bibliographiques et ressources additionnelles seront ajoutées dans chaque capsule de cours.
+## 🧪 Laboratoire
+### **Thème : Améliorer la densité des arbres dans les parcs**
+1. **Collecte et préparation** des données vectorielles.
+2. Conversion et intégration avec **FME**.
+3. Visualisation et stylisation des cartes dans **QGIS**.
+4. Expérimentation des tuiles vectorielles avec **Mapbox**.
 
 ---
 
-
-## 📜 Bonnes pratiques
-
-- Respecter les consignes de **remise des travaux**.
-- Assurer une **intégrité académique** : mentionner vos sources et citer correctement les outils utilisés.
-- Ne pas hésiter à **demander de l'aide rapidement**.
-- Assurer vous de mettre un effort constant et de planifier à l'avance vos sessions de travail (+-7h par semaine)
+## 📂 Ressources et liens utiles
+- **Introduction aux tuiles vectorielles** : [Mapbox Guide](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-introduction/)
+- **Standards OGC** : [OGC Vector Tiles](https://www.ogc.org/)
+- **Outils** :
+  - FME : [Safe Software](https://www.safe.com)
+  - QGIS : [QGIS.org](https://qgis.org)
+  - Mapbox : [Mapbox Documentation](https://docs.mapbox.com/)
+- **Spécifications Vector Tiles** : [GitHub - Mapbox](https://github.com/mapbox/vector-tile-spec/tree/master/2.1)
 
 ---
 
-**🎓 Bon apprentissage et bonne session ! 🚀**
+## 📝 Devoir
+- **Travail pratique 2 (TP2)** : Intégration des données vectorielles et début de la visualisation.
+- **Livrables** : Nettoyage et intégration des données avec FME et QGIS.
+- **Date de remise** : **4 mars 2025**.
+
+---
+
+## ❓ Questions et échanges
+- Discussion sur les défis liés aux tuiles vectorielles.
+- Présentation des résultats du laboratoire et échanges sur les bonnes pratiques d'intégration.
+
+---
+
+**🚀 À la semaine prochaine pour le cours 4 !**

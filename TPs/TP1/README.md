@@ -75,10 +75,9 @@ Un dépot **Github** contenant :
 ## 🧾 Grille d’évaluation
 | Critère                                | Pondération   |
 |---------------------------------------|--------------:|
-| **Choix du thème et de la problématique**   | 20%          |
+| **Choix du thème et de la problématique**   | 50%          |
 | **Choix et respect des jeux de données** | 50%          |
-| **Qualité des jeux de données**       | 15%          |
-| **Complexité de la réalisation**      | 15%          |
+
 
 ### **Détails des critères**
 - **Thème et problématique** : Originalité et pertinence du choix.

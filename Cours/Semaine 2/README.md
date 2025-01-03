@@ -1,97 +1,94 @@
-# 📚 GEO 7630 - Cours 3 : Intégration et visualisation des données vectorielles
+# 📚 GEO 7630 - Cours 2 : La perception visuelle et UI/UX en cartographie
 
 ## 🗓️ Date
-- **21 janvier 2025**
+- **14 janvier 2025**
 
-## 🎯 Objectifs du cours 3
-1. Comprendre les **données vectorielles** et leurs usages.
-2. Explorer les concepts d'**intégration** et de **visualisation**.
-3. Identifier les **défis** et les **bonnes pratiques** pour intégrer les données vectorielles.
-4. Introduction aux **tuiles vectorielles** et à leur utilisation dans la cartographie web.
-5. Atelier pratique : prise en main des outils pour le **TP2**.
+## 🎯 Objectifs du cours 2
+1. Comprendre les principes de **perception visuelle** et leur rôle dans la cartographie.
+2. Explorer l'approche **communicationnelle** en cartographie.
+3. Appliquer les principes avancés d'**UI/UX** pour la conception d'interfaces cartographiques efficaces.
+4. Découvrir des outils et méthodologies pour améliorer l'expérience utilisateur en cartographie.
 
 ---
 
 ## 📋 Contenu du cours
 
-### **1. Données vectorielles**
-- **Définition** : Points, lignes et polygones.
-- **Applications** : Cartographie interactive, modélisation spatiale.
-- **Défis** :
-  - Hétérogénéité et incohérence des données.
-  - Vérification et validation.
+### **1. Perception visuelle et profondeur**
+- **Concepts clés** :
+  - **2D**, **2.5D**, **3D**, et **4D**.
+  - Rôle de la perception dans la cartographie interactive.
+- **Exemples** :
+  - Jersey City Building Footprints : [Lien](http://sml2198.github.io/JC-buildings/10-19-16.html#16.14/40.71373/-74.03927/-81.3)
+  - **Kepler.gl Showreel** : [Vidéo](https://youtu.be/e2NEz3wcpZg)
 
-### **2. Tuiles vectorielles : Introduction**
-- **Qu'est-ce qu'une tuile vectorielle ?**
-  - Représentation numérique des données géographiques en format vectoriel.
-  - Permet un chargement rapide et une haute qualité lors du zoom.
-- **Chronologie des tuiles vectorielles** :
-  - 1980-1990 : Besoin de stockage efficace.
-  - 2010 : Adoption par Google Maps API.
-  - 2020-2024 : Standardisation OGC, utilisation de WebGL.
-- **Avantages des tuiles vectorielles** :
-  - Qualité d'image élevée.
-  - Performances optimisées (3x plus rapides).
-  - Interactivité et style dynamique à la volée.
+### **2. Introduction à l'UI/UX en cartographie**
+- **UI (Interface Utilisateur)** et **UX (Expérience Utilisateur)** : Définition et différences.
+- **Les principes Laws of UX** :
+  - **Occam** : Réduire la complexité.
+  - **Postel** : Planifier et anticiper.
+  - **Tesler** : Complexe mais pas compliqué.
+- **Heuristiques** :
+  - **Hicks** : Trop de choix tue le choix.
+  - **Jakob's** : Ne pas réinventer la roue.
+  - **Miller** : Jamais plus de 7 options.
 
-### **3. Concepts d'intégration des données vectorielles**
-1. **Collecte et récupération** des données :
-   - Connexion directe à la source pour éviter les téléchargements répétitifs.
-2. **Conversion** : Formats interopérables (FME, GDAL/OGR).
-3. **Vérification et validation** :
-   - Assurer la qualité, la précision et la performance des données.
-4. **Persistance** :
-   - Centralisation, permissions, indexation et scalabilité.
-5. **Diffusion** :
-   - Transparence, accessibilité en temps réel.
+### **3. Cartodesign et Géodesign**
+- **Étapes clés** :
+  1. Préplanification : Les données racontent une histoire.
+  2. Exploration : Modélisation théorique de l’histoire.
+  3. Conception : Donner vie à l’histoire.
+  4. Assurance qualité : Relecture et ajustements.
+  5. Retour d'information : Présentation à des cercles de rétroaction.
+- **Outils utiles** :
+  - Laws of UX : [lawsofux.com](https://lawsofux.com/)
+  - UX Process : [UX Booth](https://www.uxbooth.com/articles/ux-a-process-or-a-task/)
 
-### **4. Défis et enjeux**
-- **Hétérogénéité** : Sources et formats multiples.
-- **Incohérence** : Vérification des attributs et corrections nécessaires.
-- **Performance** : Gestion des grandes quantités de données.
-- **Sécurité** : Anonymisation et protection des données sensibles.
-- **Coût** : Automatisation avec des pratiques DevOps.
-
-### **5. Atelier : Prise en main des outils**
-- **Objectif** : Intégrer et visualiser des données vectorielles.
-- **Outils utilisés** :
-  - **FME** pour l'intégration ETL.
-  - **QGIS** pour la visualisation.
-  - **Mapbox** pour l'utilisation des tuiles vectorielles.
+### **4. Application des couleurs en cartographie**
+- **Types de perceptions des couleurs** :
+  - **Séquentiel** : Classement des données.
+  - **Divergent** : Éloignement des données.
+  - **Qualitatif** : Catégorisation des données.
+- **Outils recommandés** :
+  - [ColorBrewer](https://colorbrewer2.org)
+  - [CARTOColors](https://carto.com/carto-colors/)
+  - [ESRI - Better Colors for Mapping](https://www.esri.com/arcgis-blog/products/js-api-arcgis/mapping/better-colors-for-better-mapping/)
 
 ---
 
 ## 🧪 Laboratoire
-### **Thème : Améliorer la densité des arbres dans les parcs**
-1. **Collecte et préparation** des données vectorielles.
-2. Conversion et intégration avec **FME**.
-3. Visualisation et stylisation des cartes dans **QGIS**.
-4. Expérimentation des tuiles vectorielles avec **Mapbox**.
+### **Objectifs du laboratoire**
+1. Expérimentation des principes de **profondeur visuelle** avec des outils interactifs.
+2. Mise en pratique des **principes UI/UX** pour une interface cartographique.
+3. Visualisation des données avec des outils **ColorBrewer** et **QGIS**.
+
+### **Exercices**
+- Création d'une carte thématique avec application des principes de **sémiologie graphique**.
+- Utilisation des **couleurs séquentielles, divergentes, et qualitatives** pour différentes données.
+- Expérimentation des outils de conception **UI/UX** pour cartodesign.
 
 ---
 
 ## 📂 Ressources et liens utiles
-- **Introduction aux tuiles vectorielles** : [Mapbox Guide](https://docs.mapbox.com/data/tilesets/guides/vector-tiles-introduction/)
-- **Standards OGC** : [OGC Vector Tiles](https://www.ogc.org/)
-- **Outils** :
-  - FME : [Safe Software](https://www.safe.com)
-  - QGIS : [QGIS.org](https://qgis.org)
-  - Mapbox : [Mapbox Documentation](https://docs.mapbox.com/)
-- **Spécifications Vector Tiles** : [GitHub - Mapbox](https://github.com/mapbox/vector-tile-spec/tree/master/2.1)
+- **Principes UI/UX** : [Laws of UX](https://lawsofux.com/)
+- **Outils de couleurs** :
+  - [ColorBrewer](https://colorbrewer2.org)
+  - [CARTOColors](https://carto.com/carto-colors/)
+- **Cartodesign & UX** :
+  - [UX Booth](https://www.uxbooth.com/articles/ux-a-process-or-a-task/)
+  - [Map UI Patterns](https://www.mapuipatterns.com/)
 
 ---
 
 ## 📝 Devoir
-- **Travail pratique 2 (TP2)** : Intégration des données vectorielles et début de la visualisation.
-- **Livrables** : Nettoyage et intégration des données avec FME et QGIS.
-- **Date de remise** : **4 mars 2025**.
+- **Travail pratique 1 (TP1)** : Poursuite de l'identification de la problématique et acquisition des données.
+- **Livrables** : Préparation des premières visualisations avec les principes UI/UX et perception visuelle appliqués.
 
 ---
 
 ## ❓ Questions et échanges
-- Discussion sur les défis liés aux tuiles vectorielles.
-- Présentation des résultats du laboratoire et échanges sur les bonnes pratiques d'intégration.
+- Discussion sur les bonnes pratiques en UI/UX.
+- Exploration des différents types de perception visuelle.
 
 ---
 
-**🚀 À la semaine prochaine pour le cours 4 !**
+**🚀 À la semaine prochaine pour le cours 3 !**
