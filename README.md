@@ -240,6 +240,7 @@ Les références bibliographiques et ressources additionnelles seront ajoutées 
 - Assurer une **intégrité académique** : mentionner vos sources et citer correctement les outils utilisés.
 - Ne pas hésiter à **demander de l'aide rapidement**.
 - Assurer vous de mettre un effort constant et de planifier à l'avance vos sessions de travail (+-7h par semaine)
+- Je vous encourage à **partager vos liens et trouvailles** dans le **TEAMS du cours** pour en faire bénéficier les autres personnes inscrites. 
 
 ---
 
@@ -274,7 +275,85 @@ Pour respecter les **politiques universitaires sur l’intégrité académique**
 ## 🚀 Pour aller plus loin
 - **Cours gratuit sur l’utilisation de ChatGPT** : [Catalogue Edulib - GPT 101](https://catalogue.edulib.org/fr/cours/umontreal-gpt101/)
 
-Je vous encourage à **partager vos liens et trouvailles** dans le **TEAMS du cours** pour en faire bénéficier les autres personnes inscrites. Cela contribuera à une meilleure appropriation collective de ces outils. 
+
+# Politique no 2 sur la liberté académique universitaire
+
+## Extrait de la politique no 2 sur la liberté académique universitaire, article 5.
+
+### 5. Droit à la liberté académique universitaire
+
+Le droit à la liberté académique universitaire est le droit de toute personne d’exercer librement et sans contrainte doctrinale, idéologique ou morale, telle la censure institutionnelle, une activité par laquelle elle contribue à l’accomplissement de la mission d’une université.
+
+Ce droit comprend la liberté :
+
+- **d’enseignement et de discussion** ;
+- **de recherche, de création et de publication** ;
+- **d’exprimer son opinion sur la société et sur une institution**, y compris l’établissement duquel la personne relève, ainsi que sur toute doctrine, tout dogme ou toute opinion ;
+- **de participer librement aux activités d’organisations professionnelles ou d’organisations académiques**.
+
+Il doit s’exercer en conformité avec les normes d’éthique et de rigueur scientifique généralement reconnues par le milieu universitaire et en tenant compte des droits des autres membres de la communauté universitaire.
+
+---
+
+# Politique no 42 sur le respect des personnes, la prévention et l’intervention en matière de harcèlement (extraits)
+
+L’Université reconnaît à toutes les personnes membres de la communauté universitaire le droit d’être traitées avec dignité, équité et respect mutuel.
+
+L’Université considère que le respect mutuel, l’égalité, l’écoute et l’entraide sont des valeurs importantes favorisant l’épanouissement personnel et l’établissement de rapports harmonieux entre les personnes et les groupes.
+
+### Définitions
+
+- **Harcèlement psychologique** : Une conduite vexatoire se manifestant par des comportements, des paroles, des écrits, des actes ou des gestes répétés qui sont hostiles ou non désirés et ayant pour effet de porter atteinte à la dignité ou à l’intégrité psychologique ou physique d’une personne.
+  
+- **Harcèlement discriminatoire** : Lié à des motifs sur lesquels il est légalement interdit de discriminer (sexe, orientation sexuelle, âge, religion, etc.).
+
+Une seule conduite grave peut aussi constituer du harcèlement si elle produit un effet nocif continu pour une personne.
+
+---
+
+# Règlement no 18 sur les infractions de nature académique
+
+Tout acte de plagiat, fraude, copiage, tricherie ou falsification de document constitue une infraction au sens de ce règlement. Pour plus d’informations, consultez le [site dédié](http://r18.uqam.ca).
+
+---
+
+# Politique no 16 : Prévenir et combattre le sexisme et les violences à caractère sexuel
+
+## Article 3.2 Consentement sexuel
+
+Le consentement sexuel doit être volontaire, libre, éclairé, clair et maintenu tout au long de l’activité sexuelle.
+
+#### Absence de consentement
+- La personne est incapable de le formuler (inconscience, intoxication, etc.).
+- La personne exprime une absence d’accord par ses paroles ou comportements.
+- La personne consent sous l’effet de la crainte ou d’un abus de pouvoir.
+
+---
+
+## Article 3.18 Violences à caractère sexuel
+
+Les violences à caractère sexuel incluent :
+- Avances verbales ou non verbales non désirées ;
+- Cyberharcèlement sexuel ;
+- Diffusion d’images sexuelles sans consentement ;
+- Agression sexuelle ou menace d’agression.
+
+Pour plus d’information, consultez la [Politique no 16](https://instances.uqam.ca/wp-content/uploads/sites/47/2019/04/Politique_no_16_2.pdf).
+
+---
+
+# Soutien et ressources
+
+- **Bureau d’intervention et de prévention en matière de harcèlement (BIPH)** :  
+  Téléphone : 514 987-3000, poste 0886  
+  Courriel : [harcelement@uqam.ca](mailto:harcelement@uqam.ca)
+
+- **Soutien psychologique (Services à la vie étudiante)** :  
+  Téléphone : 514 987-3185  
+  [Site web](http://vie-etudiante.uqam.ca/)
+
+- **Service de la prévention et de la sécurité** :  
+  Téléphone : 514 987-3131
 
 
 **🎓 Bon apprentissage et bonne session ! 🚀**
