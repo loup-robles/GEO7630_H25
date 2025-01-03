@@ -175,7 +175,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
 | **Travail/Examen**                     | **Pondération** | **Échéance**         |
 |----------------------------------------|-----------------|----------------------|
 | **TP1** - Problématique et données     | 5%              | 28 janvier 2025      |
-| **TP2** - Intégration vectorielle      | 15%             | 4 mars 2025          |
+| **TP2** - Intégration vectorielle      | 15%             | 11 mars 2025          |
 | **TP3** - Développement app web        | 20%             | 15 avril 2025        |
 | **Examen intra**                       | 20%             | 4 mars 2025          |
 | **Examen final**                       | 20%             | 15 avril 2025        |
