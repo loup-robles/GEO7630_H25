@@ -4,9 +4,13 @@
 - **Cours** : Mardi 17h30 - 20h30 (A-4160)
 - **Laboratoire** : Mardi 20h30 - 22h30 (A-4160)
 
-## 👨‍🏫 Professeur
+## 👨‍🏫 Chargé de cours
 - **Clément Glogowski**  
   Email : [glogowski.clement@uqam.ca](mailto:glogowski.clement@uqam.ca)
+
+## 👨‍🔬 démonstrateur
+- **---**  
+  Email : [ ]( )
 
 ## 📝 Description du cours
 
