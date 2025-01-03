@@ -90,7 +90,7 @@
   
    `geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com`
 
-   ![Configurer le Writer PostgreSQL](image-2.png)
+   ![Configurer la connexion PostgreSQL](image-21.png)
 
 
   3. Ajoutez un **TRANSFORMER VertexCreator** pour transformer les colonnes lat/long en géométrie.
@@ -134,7 +134,7 @@
   4. Sauvegardez votre style dans la base de données.
 
    ![alt text](image-11.png)
-   
+
    ![alt text](image-12.png)
 
 #### **Validation** :
@@ -154,12 +154,7 @@
 
 | Critère                                      | Pondération   |
 |--------------------------------------------|--------------:|
-| **Création et configuration du compte GitHub** | 10%        |
-| **Connexion réussie à la base PostgreSQL**   | 20%          |
-| **Importation des données CSV dans FME**     | 20%          |
-| **Injection dans PostgreSQL**                | 20%          |
-| **Visualisation dans QGIS avec symbologie**  | 20%          |
-| **Documentation dans le README.md**          | 10%          |
+| **Ajout d'une capture d'écran de votre carte QGIS dans le README.md du dossier lab1**          | 100%          |
 
 ---
 
