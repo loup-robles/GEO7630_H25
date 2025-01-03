@@ -8,7 +8,7 @@
 - **Clément Glogowski**  
   Email : [glogowski.clement@uqam.ca](mailto:glogowski.clement@uqam.ca)
 
-## 👨‍🔬 démonstrateur
+## 👨‍🔬 Démonstrateur
 - **---**  
   Email : [ ]( )
 
