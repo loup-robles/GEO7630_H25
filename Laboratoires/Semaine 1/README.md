@@ -14,33 +14,33 @@
 3. Lancez VSCode sur votre ordinateur.
 4. Clonez le dépôt précédemment créé.
 
-   ![alt text](image-13.png)
+   ![alt text](images/image-13.png)
 
-   ![alt text](image-14.png)
+   ![alt text](images/image-14.png)
 
 5. Créez un dossier `lab1`.
 
-   ![alt text](image-15.png)
+   ![alt text](images/image-15.png)
 
 6. Créez un fichier `README.md`.
 
-   ![alt text](image-16.png)
+   ![alt text](images/image-16.png)
 
 7. Écrivez "Geo7630" dans le fichier `README.md` du nouveau fichier créé.
 
-   ![alt text](image-17.png)
+   ![alt text](images/image-17.png)
 
 8. Commitez et poussez votre fichier README sur GitHub.
 
-   ![alt text](image-18.png)
+   ![alt text](images/image-18.png)
 
    1. Vous devez maintenant ajouter les changements que vous voulez sauvegarder en appuyant sur le signe +.
 
-   ![alt text](image-19.png)
+   ![alt text](images/image-19.png)
 
    2. Commitez et poussez votre fichier README.
 
-   ![alt text](image-20.png)
+   ![alt text](images/image-20.png)
 
    3. Attention, vous devrez configurer votre VSCode avec votre nom d'utilisateur et votre adresse courriel avant de pouvoir envoyer vos données sur GitHub.
       Appuyez sur `Ctrl + J`.
@@ -73,11 +73,11 @@
 #### **Étapes dans FME** :
 1. Utilisez le **Reader** pour importer les données CSV.
 
-   ![Importer le CSV](image.png)
+   ![Importer le CSV](images/image.png)
 
 2. Choisissez l'option **web - URL** et copiez-collez l'adresse ci-dessus.
 
-   ![Choisir URL dans FME](image-1.png)
+   ![Choisir URL dans FME](images/image-1.png)
 
 3. Si vous cliquez sur **Paramètre**, vous pourrez pré-inspecter le modèle de données et constater qu'il existe 4 colonnes de coordonnées géographiques.
 
@@ -90,24 +90,24 @@
   
    `geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com`
 
-   ![Configurer la connexion PostgreSQL](image-21.png)
+   ![Configurer la connexion PostgreSQL](images/image-21.png)
 
 
   3. Ajoutez un **TRANSFORMER VertexCreator** pour transformer les colonnes lat/long en géométrie.
 
-   ![Ajouter un Transformer](image-4.png)
+   ![Ajouter un Transformer](images/image-4.png)
 
   4. Choisissez les bonnes informations de transformation.
 
-   ![Paramétrage du Transformer](image-5.png)
+   ![Paramétrage du Transformer](images/image-5.png)
 
   5. Injectez la table CSV en tant que nouvelle table dans le schéma `public`.
 
-   ![Injection dans PostgreSQL](image-3.png)
+   ![Injection dans PostgreSQL](images/image-3.png)
 
   6. Vérifiez que votre table est bien présente.
 
-   ![Vérification dans PostgreSQL](image-6.png)
+   ![Vérification dans PostgreSQL](images/image-6.png)
 
 #### **Bonnes pratiques** :
 - Utilisez des noms de tables en **minuscules** et avec **underscores** (ex : `lab1_points_adresses`).
@@ -119,23 +119,23 @@
 - **Ouvrez QGIS** et connectez-vous à votre base PostgreSQL :
   1. Ajoutez une nouvelle connexion à la base de données.
 
-   ![Connexion QGIS](image-7.png)
+   ![Connexion QGIS](images/image-7.png)
 
-   ![Paramètres de connexion QGIS](image-8.png)
+   ![Paramètres de connexion QGIS](images/image-8.png)
 
   2. Visualisez la table importée.
 
-   ![Visualisation QGIS](image-9.png)
+   ![Visualisation QGIS](images/image-9.png)
 
   3. Donnez un style à votre couche de points.
 
-   ![alt text](image-10.png)
+   ![alt text](images/image-10.png)
 
   4. Sauvegardez votre style dans la base de données.
 
-   ![alt text](image-11.png)
+   ![alt text](images/image-11.png)
 
-   ![alt text](image-12.png)
+   ![alt text](images/image-12.png)
 
 #### **Validation** :
 - Assurez-vous que les points sont correctement positionnés selon les coordonnées **lat/long**.
