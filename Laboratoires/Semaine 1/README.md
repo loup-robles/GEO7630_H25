@@ -1,7 +1,7 @@
 # 📚 GEO 7630 - Laboratoire 1 : Prise en main des outils
 
 ## 🎯 Objectif du laboratoire
-- Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour le cours **GEO 7630**. .
+- Ce premier laboratoire vise à vous familiariser avec les outils essentiels pour le cours **GEO 7630**. 
 - Vous apprendrez à créer un environnement de travail collaboratif, accéder à une base de données, manipuler des données géospatiales, et visualiser ces données dans un SIG.
 
 ---
@@ -23,13 +23,11 @@
   - **Longitude**
 
 #### **Étapes dans FME** :
-1. Utilisez le **Reader** pour importer les données csv .
-
-![1](https://lh7-us.googleusercontent.com/V7kW6zmLQymgwC9VvNCUxQXzYeoOipqdeM5kzuZWKkske-KUgof_zsQDpi3bWlNwQlZmG8UTt1h31belHIsG-GfofLfXKIvgS_pzh46MuMLDKC1Hv85vf1o_3-5KIgxNm3GAwCPC9w1owobd6gOFdMI)
-
-
-2. Vérifiez que les colonnes **lat** et **long** sont correctement reconnues comme attributs.
-3. Convertissez ces données en **données vectorielles** (points).
+1. Utilisez le **Reader** pour importer les données CSV.
+   ![Importer le CSV](image.png)
+2. Choisissez l'option **web - URL** et copiez-collez l'adresse ci-dessus.
+   ![Choisir URL dans FME](image-1.png)
+3. Si vous cliquez sur **Paramètre**, vous pourrez pré-inspecter le modèle de données et constater qu'il existe 4 colonnes de coordonnées géographiques.
 
 ---
 
@@ -37,7 +35,16 @@
 - **Processus** :
   1. Configurez un **Writer** dans FME pour PostgreSQL.
   2. Spécifiez la connexion à votre base de données **Amazon**.
-  3. Injectez la table CSV en tant que nouvelle table dans le schéma `public`.
+   ![Configurer le Writer PostgreSQL](image-2.png)
+   `geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com`
+  3. Ajoutez un **TRANSFORMER VertexCreator** pour transformer les colonnes lat/long en géométrie.
+   ![Ajouter un Transformer](image-4.png)
+  4. Choisissez les bonnes informations de transformation.
+   ![Paramétrage du Transformer](image-5.png)
+  5. Injectez la table CSV en tant que nouvelle table dans le schéma `public`.
+   ![Injection dans PostgreSQL](image-3.png)
+  6. Vérifiez que votre table est bien présente.
+   ![Vérification dans PostgreSQL](image-6.png)
 
 #### **Bonnes pratiques** :
 - Utilisez des noms de tables en **minuscules** et avec **underscores** (ex : `lab1_points_adresses`).
@@ -48,8 +55,10 @@
 ### **6. Visualiser la table dans QGIS**
 - **Ouvrez QGIS** et connectez-vous à votre base PostgreSQL :
   1. Ajoutez une nouvelle connexion à la base de données.
+   ![Connexion QGIS](image-7.png)
+   ![Paramètres de connexion QGIS](image-8.png)
   2. Visualisez la table importée.
-  3. Ajoutez une symbologie simple pour les points afin d'afficher les adresses sur la carte.
+   ![Visualisation QGIS](image-9.png)
 
 #### **Validation** :
 - Assurez-vous que les points sont correctement positionnés selon les coordonnées **lat/long**.
@@ -65,6 +74,7 @@
 ---
 
 ## 🧾 Grille d'évaluation
+
 | Critère                                      | Pondération   |
 |--------------------------------------------|--------------:|
 | **Création et configuration du compte GitHub** | 10%          |
@@ -95,10 +105,7 @@
 
 **Bon début de session et bon laboratoire !** 🚀
 
-
-
-
----------------
+---
 
 ### **1. Créer un compte GitHub**
 - Rendez-vous sur [GitHub](https://github.com/) et créez un compte si ce n'est pas déjà fait.
