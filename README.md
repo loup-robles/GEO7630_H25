@@ -1,4 +1,4 @@
-# 📊 GEO 7630 - Intégration et visualisation des données géographiques
+# 🗺️🖥️🌐 GEO 7630 - Intégration et visualisation des données géographiques
 
 ## 📅 Horaire
 - **Cours** : Mardi 17h30 - 20h30 (A-4160)
@@ -59,7 +59,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
 
 ---
 
-## 🏫 Structure du cours et calendrier
+## 📅 Structure du cours et calendrier
 
 | **Date**            | **Thème**                                                 | **Évaluation / TP**                   |
 |---------------------|----------------------------------------------------------|--------------------------------------|
@@ -170,7 +170,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
 
 ---
 
-## 🧪 Évaluations
+## 📊 Évaluations
 
 | **Travail/Examen**                     | **Pondération** | **Échéance**         |
 |----------------------------------------|-----------------|----------------------|
@@ -272,7 +272,7 @@ Pour respecter les **politiques universitaires sur l’intégrité académique**
 
 ---
 
-## 🚀 Pour aller plus loin
+## Pour aller plus loin
 - **Cours gratuit sur l’utilisation de ChatGPT** : [Catalogue Edulib - GPT 101](https://catalogue.edulib.org/fr/cours/umontreal-gpt101/)
 
 
