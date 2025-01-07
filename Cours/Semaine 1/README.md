@@ -60,7 +60,7 @@ Veuillez remplir ce **sondage rapide** afin de mieux comprendre la composition d
 
 ## 📂 Ressources et liens utiles
 - **Portails de données ouvertes** :
-  - [Data Québec](https://www.donneesquebec.ca)
+  - [Lien pour les explications](https://www.donneesquebec.ca)
   - [OpenStreetMap](https://www.openstreetmap.org)
 - **Guides d'utilisation** :
   - QGIS : [qgis.org](https://qgis.org)
@@ -72,6 +72,7 @@ Veuillez remplir ce **sondage rapide** afin de mieux comprendre la composition d
 
 ## 📝 Devoir
 - **Travail pratique 1 (TP1)** : 
+  - [Lien pour les explications](https://github.com/Captain-Oski/GEO7630_H25/tree/main/TPs/TP1)
   - **Thème** : Identification de la problématique et acquisition des données.
   - **Date de remise** : **28 janvier 2025**.
 
