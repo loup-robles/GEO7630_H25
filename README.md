@@ -125,49 +125,49 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Création de dashboards et visualisations interactives.
   - Sémiologie graphique dans ArcGIS.
 - **Travail associé** : Création de services cartographiques avec ArcGIS Online.
-
+![alt text](image-5.png)
 ### **Cours 7 : Intégration avancée et développement d’applications**
 - **Thèmes abordés** :
   - **ArcGIS Story Maps** et **Experience Builder**.
   - Intégration des services via **REST API**.
   - Introduction à l'**ArcGIS Maps SDK for JavaScript**.
 - **Travail associé** : Développement d’une application interactive simple.
-
+![alt text](image-6.png)
 ### **Cours 8 : Webmapping Front-End - HTML, CSS et JavaScript**
 - **Thèmes abordés** :
   - Bases de **HTML/CSS** pour structurer et styliser une page.
   - Introduction à **JavaScript** pour les interactions.
   - Utilisation des APIs comme MapLibreGL pour le webmapping.
 - **Travail associé** : Création d’une carte interactive avec JavaScript.
-
+![alt text](image-7.png)
 ### **Cours 9-10 : Architectures et services géospatiaux backend**
 - **Thèmes abordés** :
   - Architecture client-serveur.
   - Introduction à **PostGIS**, **pg_tileserv** et **pg_featureserv**.
   - Publication des données via GeoServer.
 - **Travail associé** : Configuration d’un environnement Docker et publication de services.
-
+![alt text](image-8.png)
 ### **Cours 11-12 : Analyse spatiale et conteneurisation**
 - **Thèmes abordés** :
   - Analyse spatiale (buffer, distance, intersect) avec **TurfJS**.
   - Mise en place de **conteneurs Docker** pour l’application backend.
   - Utilisation de **GDAL** pour les flux ETL/ELT.
 - **Travail associé** : Analyse et conteneurisation des traitements ETL.
-
+![alt text](image-9.png)
 ### **Cours 13 : Visualisation 3D avec 3D Tiles**
 - **Thèmes abordés** :
   - Introduction aux **3D Tiles** pour le rendu 3D sur le web.
   - Utilisation d'outils comme **Itowns** et **CesiumJS**.
   - Techniques d’optimisation pour le streaming des modèles 3D.
 - **Travail associé** : Création d’une scène interactive avec des données 3D.
-
+![alt text](image-10.png)
 ### **Cours 14 : Mise en production d'une application webmapping**
 - **Thèmes abordés** :
   - Bonnes pratiques pour la **mise en production**.
   - Publication, assurance qualité, et stratégies de déploiement.
   - Contribution open source et gestion du code avec **GitHub**.
 - **Travail associé** : Préparation finale et déploiement de l’application webmapping.
-
+![alt text](image-11.png)
 ---
 
 ## 📊 Évaluations
