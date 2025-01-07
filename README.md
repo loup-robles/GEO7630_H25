@@ -70,7 +70,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
 | **4 février 2025**  | Données LiDAR et visualisation 3D (Jakarto, terrain)     | Visualisation 3D                     |
 | **11 février 2025** | ArcGIS Online : Sémiologie, UI/UX                       | Création d'une webmap                |
 | **18 février 2025** | ArcGIS Online : Dashboards, Experience Builder          | TP2 en progression                   |
-| **25 février 2025** | Examen intra                                            | - **TP2 Dû**                          |
+| **25 février 2025** | Examen intra                                            | **TP2 Dû**                          |
 | **4 mars 2025**     | Relâche                                                 | -                                    |
 | **11 mars 2025**    | Webmapping open source : OGC, GeoServer, PostGIS        | Diffusion de données                 |
 | **18 mars 2025**    | Webmapping (Front-end) : HTML, CSS, JS, API             | Développement cartographique         |
