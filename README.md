@@ -90,35 +90,35 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Notions fondamentales de **visualisation de données géographiques**.
   - Introduction aux composantes **temporelles, spatiales, qualitatives et quantitatives**.
 - **Travail associé** : Identification d'une problématique pour le TP1.
-
+![alt text](image.png)
 ### **Cours 2 : Perception visuelle et principes UI/UX**
 - **Thèmes abordés** :
   - Principes de **perception visuelle** pour la cartographie.
   - Introduction à l'UI/UX (User Interface / User Experience).
   - Application des lois de l'UX (Occam, Postel, Miller, etc.).
 - **Travail associé** : Création de visualisations simples respectant les principes UI/UX.
-
+![alt text](image-1.png)
 ### **Cours 3 : Intégration et visualisation des données vectorielles**
 - **Thèmes abordés** :
   - Introduction aux **données vectorielles** (points, lignes, polygones).
   - Utilisation des **tuiles vectorielles** pour des cartes interactives.
   - Validation et nettoyage des données.
 - **Travail associé** : Manipulation des données vectorielles dans FME.
-
+![alt text](image-2.png)
 ### **Cours 4 : Intégration et visualisation des données matricielles**
 - **Thèmes abordés** :
   - Concepts des **données matricielles** (rasters).
   - Opérations de mosaïcage, resampling, et masking.
   - Visualisation des rasters : Hillshading, Color Mapping.
 - **Travail associé** : Visualisation d'images aériennes et création de rasters dans QGIS.
-
+![alt text](image-3.png)
 ### **Cours 5 : Intégration et visualisation des données 3D**
 - **Thèmes abordés** :
   - Introduction aux données **LiDAR** et modèles 3D.
   - Techniques de modélisation de surface (TIN, interpolation).
   - Visualisation des nuages de points et bâtiments 3D.
 - **Travail associé** : Création de modèles 3D interactifs.
-
+![alt text](image-4.png)
 ### **Cours 6 : Visualisation avec ArcGIS Online**
 - **Thèmes abordés** :
   - Utilisation de **ArcGIS Online** pour publier des cartes.
