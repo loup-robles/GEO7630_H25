@@ -86,6 +86,11 @@
 ### **4. Injecter la table dans votre schéma PostgreSQL**
 - **Processus** :
   1. Configurez un **Writer** dans FME pour PostgreSQL.
+
+  `! Attention il faut que le type de writer soit PostGIS et non PostgreSQL car sinon il ne vous laissera pas créer de colonne géométrie afin d'y stocker correctement les coordonées spatiales.`
+
+  ![PostGIS](image111.png)
+
   2. Spécifiez la connexion à votre base de données **Amazon**.
   
    `geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com`
