@@ -16,9 +16,9 @@ Assurez-vous d'avoir :
 - Un compte GitHub avec un dépôt existant (`geo7630-lab2`).
 - Accès à la base de données PostgreSQL (Amazon RDS) fournie en classe.
 
-**Jeux de données requis** (disponibles sur [Données Montréal](https://donnees.montreal.ca/)) :
-- **Arbres** : Données ponctuelles (CSV).
-- **Quartiers** : Polygones (GeoJSON).
+**Jeux de données requis**:
+- **Arbres** : [Données ponctuelles (CSV)](https://donnees.montreal.ca/dataset/b89fd27d-4b49-461b-8e54-fa2b34a628c4/resource/64e28fe6-ef37-437a-972d-d1d3f1f7d891/download/arbres-publics.csv) 
+- **Quartiers** : Polygones (GeoJSON). [Polygones (GeoJSON)](https://donnees.montreal.ca/dataset/9797a946-9da8-41ec-8815-f6b276dec7e9/resource/6b313375-d9bc-4dc3-af8e-ceae3762ae6e/download/limites-administratives-agglomeration-nad83.geojson) 
 
 ---
 
@@ -26,36 +26,51 @@ Assurez-vous d'avoir :
 1. **Ouvrez FME Workbench** et créez un nouveau projet.
 2. **Ajoutez un Reader CSV** pour les données des arbres :
    - Source : URL du fichier CSV.
+   ![alt text](image.png)
    - Vérifiez que les champs **latitude** et **longitude** sont reconnus correctement.
 3. **Ajoutez un Reader GeoJSON** pour les quartiers :
    - Source : URL du fichier GeoJSON.
+   ![alt text](images/image-1.png)
 
 #### **Validation** :
 - Utilisez **Feature Caching** pour inspecter vos données avec l’Inspecteur FME.
 - Assurez-vous que les géométries sont valides et que les attributs sont chargés correctement.
-
+![Exemple pour les arrondissements](images/image-2.png)
 ---
 
 ### **3. Reprojeter les données**
-- Utilisez le **Reprojector** pour projeter les deux jeux de données en EPSG:3857 (Web Mercator).
-- Validez que les couches ont la même projection.
+- Utilisez le **Reprojector** pour projeter les deux jeux de données en EPSG:32188 MTM8.
 
+`Reprojeter en **MTM8 (EPSG:32188)** garantit l’alignement des couches SIG, améliore la précision des analyses locales et minimise les distorsions. Ce système est adapté aux régions spécifiques comme le Québec, respectant les standards géospatiaux locaux.`
+
+- Validez que les couches ont la même projection.
+![Reprojection en 32188](images/image-3.png)
+- Vous devriez avoir quelquechose comme ca :
+![alt text](images/image-4.png)
 ---
 
 ### **4. Jointure spatiale**
+
+`Une **jointure spatiale** associe des données de deux couches SIG en fonction de leur relation géographique (intersection, contenance, proximité). Elle permet d'enrichir les données en liant attributs et géométries selon leur emplacement spatial.`
+
+
 1. **Effectuez une jointure spatiale** pour compter le nombre d'arbres par quartier :
    - Utilisez le **PointOnAreaOverlayer** pour associer chaque point (arbre) à un polygone (quartier).
    - Calculez la somme des arbres dans chaque quartier.
+   ![alt text](images/image-5.png)
 2. **Nettoyez les attributs** :
    - Gardez uniquement les attributs pertinents (ex. `nom_quartier`, `nombre_arbres`).
    - Utilisez le **AttributeKeeper** pour filtrer les colonnes inutiles.
-
+   ![alt text](images/image-6.png)
 ---
 
 ### **5. Calcul d'une statistique supplémentaire**
 - Ajoutez une colonne avec la **densité d'arbres** par quartier :
    - Utilisez le **AttributeCreator** pour créer un champ `densite_arbres`.
    - Formule : `nombre_arbres / superficie_quartier` (en hectares).
+
+   ![alt text](images/image-7.png)
+   ![alt text](images/image-8.png)
 
 ---
 
