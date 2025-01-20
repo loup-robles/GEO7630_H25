@@ -89,7 +89,7 @@
 
   `! Attention il faut que le type de writer soit PostGIS et non PostgreSQL car sinon il ne vous laissera pas créer de colonne géométrie afin d'y stocker correctement les coordonées spatiales.`
 
-  ![PostGIS](image111.png)
+  ![PostGIS](images/image111.png)
 
   2. Spécifiez la connexion à votre base de données **Amazon**.
   
