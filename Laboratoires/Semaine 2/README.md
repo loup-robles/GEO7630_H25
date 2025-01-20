@@ -88,10 +88,17 @@ Assurez-vous d'avoir :
 ### **7. Visualiser les données dans QGIS**
 1. Connectez-vous à votre base de données PostgreSQL depuis **QGIS**.
 2. Chargez la table **densite_arbres_quartiers**.
+![alt text](images/image11.png)
 3. Appliquez une symbologie :
    - Utilisez un **gradient de couleurs** pour représenter la densité d'arbres.
    - Créez une carte simple et compréhensible.
-4. Exportez le style en fichier `.sld` et sauvegardez-le dans votre base de données.
+
+   ![alt text](images/image10.png)
+
+   ![alt text](images/image9.png)
+4. Exportez le style pour le sauvegarder dans votre base de données
+![alt text](images/image12.png)
+![alt text](images/image13.png)
 
 ---
 
