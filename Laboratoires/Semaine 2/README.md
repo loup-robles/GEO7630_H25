@@ -103,27 +103,12 @@ Assurez-vous d'avoir :
 ---
 
 ## 📝 Matériel à remettre
-1. **Dépôt GitHub** :
-   - Fichier **FME Workbench (.fmw)**.
-   - README.md documentant les étapes réalisées.
-   - Schéma explicatif du processus ETL (draw.io ou équivalent).
+1. **Table dans le schema de la BD** 
 2. **Capture d’écran QGIS** montrant la carte finale avec la densité d'arbres par quartier.
 3. **Style `.sld` exporté** pour la couche dans PostgreSQL.
 
 ---
 
-## 🧾 Grille d'évaluation
-| Critère                                      | Pondération   |
-|--------------------------------------------|--------------:|
-| **Lecture et validation des données**       | 15%          |
-| **Reprojection en EPSG:3857**               | 10%          |
-| **Jointure spatiale et calcul des statistiques** | 20%          |
-| **Calcul de la densité d’arbres**           | 15%          |
-| **Écriture dans PostgreSQL**                | 15%          |
-| **Visualisation dans QGIS avec symbologie** | 15%          |
-| **Documentation dans le README.md**         | 10%          |
-
----
 
 ## 🚀 Conseils pour réussir
 1. **Validez chaque étape** dans FME avec **Feature Caching**.
