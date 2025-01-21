@@ -62,12 +62,12 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
    - Sélectionner également l’option **URL**.
    ![alt text](image.png)
 4. Valider que les données sont chargées correctement avec l’option JUST RUN THIS.
-   ![alt text](image-1.png)
+   ![alt text](images/image-1.png)
 5. Assurez vous que l’option ENABLE FEATURE CACHING soit bien activée
     Cette option permet de charger en mémoire les données et de ne pas les retélécharger à chaque "run"
-   ![alt text](image-2.png)
+   ![alt text](images/image-2.png)
 6. Vous allez ensuite pouvoir inspecter vos données avec l’inspecteur (icône de loupe ou d’oeil)
-    ![alt text](image-3.png)
+    ![alt text](images/image-3.png)
 ---
  
 
@@ -80,7 +80,7 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
 1. Reprojeter les couches de données (arbres et parcs) en **EPSG:32188**.
 2. Utiliser le transformer **Reprojector** dans FME.
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ---
 
@@ -90,7 +90,7 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
 
 1. Effectuer une jointure spatiale pour associer chaque arbre à un parc.
 2. Utiliser le transformer **PointOnAreaOverlayer**.
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ---
 
@@ -104,14 +104,14 @@ Sélectionner les attributs nécessaires :
 
 Ca pourrait aussi être un **AttributeManager** qui est à mon sens plus pratique et plus versatile
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 2. Gérer les erreurs avec un LOGGER :
 
 Connectez une boîte de LOG aux "features rejetées" pour capturer et identifier les erreurs sans interrompre le processus.
 Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le LOGGER.
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ---
 ### 📊 **Étape 9 : Calcul de la médiane de densité**
@@ -123,7 +123,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer les paramètres pour calculer la **médiane** des variables suivantes :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).  
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 3. Vérifier les résultats en inspectant la sortie du transformer.
 
 ---
@@ -136,7 +136,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer les paramètres pour calculer la **médiane** des variables suivantes :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).  
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 3. Vérifier les résultats en inspectant la sortie du transformer.
 
 ---
@@ -151,7 +151,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 2. Configurer une nouvelle formule pour calculer l’index :  
    - Exemple : **index = valeur actuelle / moyenne**.
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 3. Appliquer cette formule aux variables :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).
@@ -172,7 +172,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer le transformer pour :  
    - Identifier les attributs vides ou contenant des caractères spéciaux.  
    - Remplacer ces valeurs par **NULL**.
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 3. Vérifier que toutes les données problématiques sont correctement traitées avant l’étape suivante.
 
 ---
@@ -199,7 +199,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 1. Ouvrir la table dans QGIS pour vérifier que tout est OK
 2. Appliquez-y un style et sauvegarder ce style dans la BD comme vu dans les précédents laboratoires.
 
-![alt text](image-12.png)
+![alt text](images/image-12.png)
 
 ## 🔳 **Analyse de la densité arboricole avec une grille H3**
 
@@ -209,7 +209,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 1. Connecter les données des parcs à un **H3HexagonalIndexer**.
 2. Configurer la taille des hexagones.
-![alt text](image-13.png)
+![alt text](images/image-13.png)
 ---
 
 ---
@@ -220,7 +220,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 1. Ajouter un **Dissolver** au flux de travail.
 
 2. Configurer le transformer pour regrouper tous les hexagones ayant le même **H3Index** en un seul.
-![alt text](image-14.png)
+![alt text](images/image-14.png)
 3. Vérifier le résultat pour s'assurer qu’il ne reste qu’un hexagone par index H3 dans la couche finale.
 
 ---
@@ -240,7 +240,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 1. Effectuer une jointure spatiale pour compter les arbres par hexagone (**PointOnAreaOverlayer**).
 2. Dissoudre les hexagones avec **Dissolver** pour simplifier les données.
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 ---
 
 ---
@@ -271,7 +271,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
    - **h3index** → **hex_index**
 
 3. Vérifier que les noms des champs sont clairs et alignés avec les conventions de la base de données.
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 ---
 
@@ -281,7 +281,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 👉 Stocker les données dans PostGIS garantit leur pérennité et facilite les visualisations avancées dans des outils SIG.
 
 1. Exporter la grille H3 dans la base de données.
-![alt text](image-18.png)
+![alt text](images/image-18.png)
 
 ---
 
@@ -295,7 +295,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 3. Enregistrer le style dans la base de données
 
-![alt text](image-19.png)
+![alt text](images/image-19.png)
 
 ---
 
