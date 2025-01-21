@@ -61,7 +61,7 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
 3. Ajouter un **Reader GeoJSON** pour les données des parcs :
    - Sélectionner également l’option **URL**.
 
-   ![alt text](image.png)
+   ![alt text](images/image.png)
 
 4. Valider que les données sont chargées correctement avec l’option JUST RUN THIS.
 
