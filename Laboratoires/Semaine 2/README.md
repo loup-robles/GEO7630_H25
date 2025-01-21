@@ -26,10 +26,13 @@ Assurez-vous d'avoir :
 1. **Ouvrez FME Workbench** et créez un nouveau projet.
 2. **Ajoutez un Reader CSV** pour les données des arbres :
    - Source : URL du fichier CSV.
+
    ![alt text](image.png)
+
    - Vérifiez que les champs **latitude** et **longitude** sont reconnus correctement.
 3. **Ajoutez un Reader GeoJSON** pour les quartiers :
    - Source : URL du fichier GeoJSON.
+
    ![alt text](images/image-1.png)
 
 #### **Validation** :
@@ -44,8 +47,11 @@ Assurez-vous d'avoir :
 `Reprojeter en **MTM8 (EPSG:32188)** garantit l’alignement des couches SIG, améliore la précision des analyses locales et minimise les distorsions. Ce système est adapté aux régions spécifiques comme le Québec, respectant les standards géospatiaux locaux.`
 
 - Validez que les couches ont la même projection.
+
 ![Reprojection en 32188](images/image-3.png)
+
 - Vous devriez avoir quelquechose comme ca :
+
 ![alt text](images/image-4.png)
 ---
 
@@ -57,11 +63,15 @@ Assurez-vous d'avoir :
 1. **Effectuez une jointure spatiale** pour compter le nombre d'arbres par quartier :
    - Utilisez le **PointOnAreaOverlayer** pour associer chaque point (arbre) à un polygone (quartier).
    - Calculez la somme des arbres dans chaque quartier.
+
    ![alt text](images/image-5.png)
+
 2. **Nettoyez les attributs** :
    - Gardez uniquement les attributs pertinents (ex. `nom_quartier`, `nombre_arbres`).
    - Utilisez le **AttributeKeeper** pour filtrer les colonnes inutiles.
+
    ![alt text](images/image-6.png)
+
 ---
 
 ### **5. Calcul d'une statistique supplémentaire**
@@ -70,6 +80,7 @@ Assurez-vous d'avoir :
    - Formule : `nombre_arbres / superficie_quartier` (en hectares).
 
    ![alt text](images/image-7.png)
+
    ![alt text](images/image-8.png)
 
 ---
@@ -88,7 +99,9 @@ Assurez-vous d'avoir :
 ### **7. Visualiser les données dans QGIS**
 1. Connectez-vous à votre base de données PostgreSQL depuis **QGIS**.
 2. Chargez la table **densite_arbres_quartiers**.
+
 ![alt text](images/image11.png)
+
 3. Appliquez une symbologie :
    - Utilisez un **gradient de couleurs** pour représenter la densité d'arbres.
    - Créez une carte simple et compréhensible.
@@ -96,8 +109,11 @@ Assurez-vous d'avoir :
    ![alt text](images/image10.png)
 
    ![alt text](images/image9.png)
+
 4. Exportez le style pour le sauvegarder dans votre base de données
+
 ![alt text](images/image12.png)
+
 ![alt text](images/image13.png)
 
 ---
