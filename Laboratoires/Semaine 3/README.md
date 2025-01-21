@@ -60,14 +60,22 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
    - Sélectionner l’option **URL**.
 3. Ajouter un **Reader GeoJSON** pour les données des parcs :
    - Sélectionner également l’option **URL**.
+
    ![alt text](image.png)
+
 4. Valider que les données sont chargées correctement avec l’option JUST RUN THIS.
+
    ![alt text](images/image-1.png)
+
 5. Assurez vous que l’option ENABLE FEATURE CACHING soit bien activée
     Cette option permet de charger en mémoire les données et de ne pas les retélécharger à chaque "run"
+
    ![alt text](images/image-2.png)
+
 6. Vous allez ensuite pouvoir inspecter vos données avec l’inspecteur (icône de loupe ou d’oeil)
+
     ![alt text](images/image-3.png)
+
 ---
  
 
@@ -90,6 +98,7 @@ Optimiser la densité d’implantation d’arbres dans les parcs de Montréal.
 
 1. Effectuer une jointure spatiale pour associer chaque arbre à un parc.
 2. Utiliser le transformer **PointOnAreaOverlayer**.
+
 ![alt text](images/image-5.png)
 
 ---
@@ -123,7 +132,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer les paramètres pour calculer la **médiane** des variables suivantes :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).  
+
 ![alt text](images/image-9.png)
+
 3. Vérifier les résultats en inspectant la sortie du transformer.
 
 ---
@@ -136,7 +147,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer les paramètres pour calculer la **médiane** des variables suivantes :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).  
+
 ![alt text](images/image-9.png)
+
 3. Vérifier les résultats en inspectant la sortie du transformer.
 
 ---
@@ -151,7 +164,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 2. Configurer une nouvelle formule pour calculer l’index :  
    - Exemple : **index = valeur actuelle / moyenne**.
+
 ![alt text](images/image-10.png)
+
 3. Appliquer cette formule aux variables :  
    - **tree_count** (nombre d’arbres).  
    - **tree_density** (densité d’arbres).
@@ -172,7 +187,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 2. Configurer le transformer pour :  
    - Identifier les attributs vides ou contenant des caractères spéciaux.  
    - Remplacer ces valeurs par **NULL**.
+
 ![alt text](images/image-11.png)
+
 3. Vérifier que toutes les données problématiques sont correctement traitées avant l’étape suivante.
 
 ---
@@ -209,7 +226,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 1. Connecter les données des parcs à un **H3HexagonalIndexer**.
 2. Configurer la taille des hexagones.
+
 ![alt text](images/image-13.png)
+
 ---
 
 ---
@@ -220,7 +239,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 1. Ajouter un **Dissolver** au flux de travail.
 
 2. Configurer le transformer pour regrouper tous les hexagones ayant le même **H3Index** en un seul.
+
 ![alt text](images/image-14.png)
+
 3. Vérifier le résultat pour s'assurer qu’il ne reste qu’un hexagone par index H3 dans la couche finale.
 
 ---
@@ -240,8 +261,9 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 
 1. Effectuer une jointure spatiale pour compter les arbres par hexagone (**PointOnAreaOverlayer**).
 2. Dissoudre les hexagones avec **Dissolver** pour simplifier les données.
+
 ![alt text](images/image-15.png)
----
+
 
 ---
 ### 🧹 **Étape 5 : Sélection des attributs désirés**
@@ -271,6 +293,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
    - **h3index** → **hex_index**
 
 3. Vérifier que les noms des champs sont clairs et alignés avec les conventions de la base de données.
+
 ![alt text](images/image-16.png)
 
 ---
@@ -281,6 +304,7 @@ Astuce : Cliquez droit sur la flèche grise de sortie Rejected pour ajouter le L
 👉 Stocker les données dans PostGIS garantit leur pérennité et facilite les visualisations avancées dans des outils SIG.
 
 1. Exporter la grille H3 dans la base de données.
+
 ![alt text](images/image-18.png)
 
 ---
