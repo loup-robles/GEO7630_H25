@@ -100,7 +100,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Application des lois de l'UX (Occam, Postel, Miller, etc.).
 - **Travail associé** : Création de visualisations simples respectant les principes UI/UX.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ### **Cours 3 : Intégration et visualisation des données vectorielles**
 - **Thèmes abordés** :
@@ -109,7 +109,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Validation et nettoyage des données.
 - **Travail associé** : Manipulation des données vectorielles dans FME.
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### **Cours 4 : Intégration et visualisation des données matricielles**
 - **Thèmes abordés** :
@@ -118,7 +118,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Visualisation des rasters : Hillshading, Color Mapping.
 - **Travail associé** : Visualisation d'images aériennes et création de rasters dans QGIS.
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ### **Cours 5 : Intégration et visualisation des données 3D**
 - **Thèmes abordés** :
@@ -127,7 +127,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Visualisation des nuages de points et bâtiments 3D.
 - **Travail associé** : Création de modèles 3D interactifs.
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ### **Cours 6 : Visualisation avec ArcGIS Online**
 - **Thèmes abordés** :
@@ -136,7 +136,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Sémiologie graphique dans ArcGIS.
 - **Travail associé** : Création de services cartographiques avec ArcGIS Online.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ### **Cours 7 : Intégration avancée et développement d’applications**
 - **Thèmes abordés** :
@@ -145,7 +145,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Introduction à l'**ArcGIS Maps SDK for JavaScript**.
 - **Travail associé** : Développement d’une application interactive simple.
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 ### **Cours 8 : Webmapping Front-End - HTML, CSS et JavaScript**
 - **Thèmes abordés** :
@@ -154,7 +154,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Utilisation des APIs comme MapLibreGL pour le webmapping.
 - **Travail associé** : Création d’une carte interactive avec JavaScript.
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 ### **Cours 9-10 : Architectures et services géospatiaux backend**
 - **Thèmes abordés** :
@@ -163,7 +163,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Publication des données via GeoServer.
 - **Travail associé** : Configuration d’un environnement Docker et publication de services.
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ### **Cours 11-12 : Analyse spatiale et conteneurisation**
 - **Thèmes abordés** :
@@ -172,7 +172,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Utilisation de **GDAL** pour les flux ETL/ELT.
 - **Travail associé** : Analyse et conteneurisation des traitements ETL.
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 ### **Cours 13 : Visualisation 3D avec 3D Tiles**
 - **Thèmes abordés** :
@@ -181,7 +181,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Techniques d’optimisation pour le streaming des modèles 3D.
 - **Travail associé** : Création d’une scène interactive avec des données 3D.
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 ### **Cours 14 : Mise en production d'une application webmapping**
 - **Thèmes abordés** :
@@ -190,7 +190,7 @@ Le cours approfondit également les diverses formes de représentation adaptées
   - Contribution open source et gestion du code avec **GitHub**.
 - **Travail associé** : Préparation finale et déploiement de l’application webmapping.
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
 ---
 
