@@ -1,21 +1,12 @@
-Intégration matricielle FME + QGIS
+# **Laboratoire #4 : Intégration Matricielle FME + QGIS**
 
-Laboratoire #2 
-
-
-# Objectifs
-
-- Est de lire 1 ou plusieurs types de raster, TIF, Geotiff PNG
-
-- Est de travailler le raster pour extraire les valeurs et les transformer en vecteur
-
-- De stocker nos rasters purement non tuilés dans Postgresql
-
-- De tuiler nos raster en plusieurs petites images
-
-- De tuiler et pyramider nos raster en pour la diffusion web
-
-- Extraire les valeurs de Z pour les donner au vecteur
+## **Objectifs**
+- Lire et traiter un ou plusieurs types de rasters : TIF, GeoTIFF, PNG.
+- Extraire des valeurs des rasters pour les transformer en vecteurs.
+- Stocker des rasters non tuilés dans PostgreSQL/PostGIS.
+- Générer des tuiles raster pour une manipulation et diffusion efficaces.
+- Créer des pyramides de tuiles raster pour une visualisation web optimisée.
+- Associer les valeurs Z des rasters à des vecteurs.
 
 
 # Données 
