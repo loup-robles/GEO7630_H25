@@ -20,13 +20,13 @@ Laboratoire #2 
 
 # Données 
 
-# [Données lab 2](https://drive.google.com/drive/folders/1iRcyRWS_JiTciNdonm8leC7Nq03hRY5_?usp=sharing)
+# [Données lab 4](https://drive.google.com/drive/folders/1iRcyRWS_JiTciNdonm8leC7Nq03hRY5_?usp=sharing)
 
 Dézippez les données sur votre ordinateur
 
 ![alt text](images/image.png)
 
-# Démarrage du laboratoire #2
+# Démarrage du laboratoire #4
 
 Drag and drop chacun des 3 fichiers suivant pour ajouter un **_READER_**
 
@@ -125,6 +125,7 @@ Nom de la table : `hm-2002-can-4000-0257`
 
 - Ouvrez QGIS et chargez la table dans la BD pour voir l’image satellite avec un niveau de pyramidage de 2
 
+![alt text](image.png)
 
 # 2eme partie - Intégration de raster analytique - Ilôts de chaleur
 
@@ -232,6 +233,11 @@ Résultats
 
 ![alt text](images/image-26.png)
 
+Résultat du WB 
+
+![alt text](image-1.png)
+
+
 # 3eme partie Intégration de raster (MNS)
 
 ## Étape 2
@@ -272,6 +278,8 @@ Laissez les options par défaut
 
 ![alt text](images/image-29.png)
 
+
+![alt text](image-2.png)
 ## Visualisation QGIS
 
 Nous sommes maintenant capables d'avoir des polygones vectoriels qui possèdent une propriété d'élévation, ce qui va nous permettre plus tard de faire une jointure spatiale entre ces points ou ces polygones et les bâtiments pour faire de l'extrapolation 2.5D.
