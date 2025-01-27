@@ -24,7 +24,7 @@ Laboratoire #2 
 
 Dézippez les données sur votre ordinateur
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 # Démarrage du laboratoire #2
 
