@@ -1,4 +1,4 @@
-# 🛰 **Laboratoire 7 : ArcGIS Online, Dashboard et Experience Builder – Intégration de données**
+# 🛰 **Laboratoire 6 et 7 : ArcGIS Online, Dashboard et Experience Builder – Intégration de données**
 
 ---
 
