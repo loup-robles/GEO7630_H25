@@ -47,10 +47,10 @@ Votre **Writer PostgreSQL** devra enregistrer les hexagones dans la base de donn
 
 | **Paramètre** | **Valeur** |
 |--------------|-----------|
-| **Nom de la base** | `GEO7630H24` |
+| **Nom de la base** | `GEO7630H25` |
 | **Host** | `geo7630h25.cvwywmuc8u6v.us-east-1.rds.amazonaws.com` |
 | **Port** | `5432` |
-| **Database** | `GEO7630H24` |
+| **Database** | `geo7630` |
 | **Username** | `VOTRECODEMS` |
 | **Password** | `VOTRECODEMS` |
 | **Nom du Schéma** | `VOTRECODEMS` |
