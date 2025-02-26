@@ -22,7 +22,7 @@ Vous devrez **Créer une couche d’index H3** représentant la quantité de com
 ### **📥 Données entrantes**
  
 1️⃣ **Couches des commerces (GeoJSON)**  
-🔗 [Occupation commerciale 2022 - Montréal](https://donnees.montreal.ca/fr/dataset/f8582c4d-a933-4306-bb27-d883e13dd207/resource/6d874afd-f053-4a9a-8bbd-703b9bddb8d3/download/occupation-commerciale-2024.geojson)
+🔗 [Occupation commerciale 2024 - Montréal](https://donnees.montreal.ca/fr/dataset/f8582c4d-a933-4306-bb27-d883e13dd207/resource/6d874afd-f053-4a9a-8bbd-703b9bddb8d3/download/occupation-commerciale-2024.geojson)
  
 2️⃣ **Limites terrestres (GeoJSON) pour créer les hexagones**  
 🔗 [Limites terrestres - Montréal](https://data.montreal.ca/dataset/b628f1da-9dc3-4bb1-9875-1470f891afb1/resource/92cb062a-11be-4222-9ea5-867e7e64c5ff/download/limites-terrestres.geojson)
@@ -30,10 +30,10 @@ Vous devrez **Créer une couche d’index H3** représentant la quantité de com
 ---
  
 ## **🔍 Requis du TP**
-✅ **Filtrer les commerces vacants** sur la propriété `VACANT`. 
-✅ **Créer des points à partir des données filtrées avec VertexCreator** 
-✅ **Créer des hexagones H3** de **résolution 9** (segments de **0,2 km**).  
-✅ **Écrire les hexagones dans la base de données PostgreSQL/PostGIS**.  
+✅ **Filtrer les commerces vacants** sur la propriété `VACANT`.
+✅ **Créer des points à partir des données filtrées avec VertexCreator**
+✅ **Créer des hexagones H3** de **résolution 9** (segments de **0,2 km**).
+✅ **Écrire les hexagones dans la base de données PostgreSQL/PostGIS**.
 ✅ **Créer une carte QGIS, choisir la symbologie désirée et faire un screenshot de votre carte et me l'envoyer par courriel à : glogowski.clement@uqam.ca**
 
 ⚠️ **Indice 1:** Le polygone contenant le plus de commerces vacants en possède **70**.
