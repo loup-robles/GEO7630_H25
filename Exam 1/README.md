@@ -31,10 +31,15 @@ Vous devrez **Créer une couche d’index H3** représentant la quantité de com
  
 ## **🔍 Requis du TP**
 ✅ **Filtrer les commerces vacants** sur la propriété `VACANT`.
+
 ✅ **Créer des points à partir des données filtrées avec VertexCreator**
+
 ✅ **Créer des hexagones H3** de **résolution 9** (segments de **0,2 km**).
+
 ✅ **Écrire les hexagones dans la base de données PostgreSQL/PostGIS**.
+
 ✅ **Créer une carte QGIS, choisir la symbologie désirée et faire un screenshot de votre carte et me l'envoyer par courriel à : glogowski.clement@uqam.ca**
+
 
 ⚠️ **Indice 1:** Le polygone contenant le plus de commerces vacants en possède **70**.
 
