@@ -71,13 +71,13 @@ Les polygones sont bien chargés, mais avec une symbologie par défaut.
 
 Dans la fonction colorPolygons() (ligne 96) du fichier .js , changez :
 
-'color': 'red'
+`'color': 'red'`
 
 par :
 
-'color': '#9f40ff' (notation Hexadécimale des couleurs)
+`'color': '#9f40ff'` (notation Hexadécimale des couleurs)
 
-Testez avec le bouton Colorier.
+#### Testez avec le bouton Colorier.
 
 ![alt text](image-5.png)
 
@@ -85,22 +85,24 @@ Testez avec le bouton Colorier.
 
 Créez un nouveau fichier randomColor.js et insérez le code suivant :
 
+```
 function randomColor() {
   var r = Math.floor(Math.random() * 256);
   var g = Math.floor(Math.random() * 256);
   var b = Math.floor(Math.random() * 256);
   return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
+```
 
 Ajoutez-le dans index.html :
 
-<script type='text/javascript' src='./randomColor.js'></script>
+`<script type='text/javascript' src='./randomColor.js'></script>`
 
 ### 4. Appliquer une couleur aléatoire aux polygones
 
 Modifiez la fonction colorPolygons() pour utiliser randomColor() à la place de la couleur codé en dur :
 
-'color': randomColor()
+`'color': randomColor()`
 
 #### Rechargez la page et testez.
 
@@ -109,7 +111,7 @@ Modifiez la fonction colorPolygons() pour utiliser randomColor() à la place de 
 
 ### 5. Ajouter une coloration thématique
 
-Remplacez randomColor() par une symbologie thématique basé sur l’attribut `operator_id` :
+Remplacez **randomColor()** par une symbologie thématique basé sur l’attribut `operator_id` :
 
 ```
 {
@@ -187,7 +189,7 @@ map.addLayer({
 
 ### 7. Ajouter des étiquettes aux polygones
 
-Dans map.addLayer(), ajoutez :`
+Dans map.addLayer(), ajoutez :
 ```
 map.addLayer({
   'id': 'geojson-label',
