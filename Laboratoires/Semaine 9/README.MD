@@ -102,7 +102,7 @@ Ajoutez-le dans index.html :
 
 Modifiez la fonction colorPolygons() pour utiliser randomColor() à la place de la couleur codé en dur :
 
-`'color': randomColor()`
+` 'color': randomColor() `
 
 #### Rechargez la page et testez.
 
@@ -189,7 +189,8 @@ map.addLayer({
 
 ### 7. Ajouter des étiquettes aux polygones
 
-Dans map.addLayer(), ajoutez :
+Dans la fonction `handleFileSelect` (ligne 32) injectez le morceau de code suivant à la fin (après la méthode map.addLayer()) pour permettre l'ajout d'un nouveau layer d'étiquettes à vos polygones de garages :
+
 ```
 map.addLayer({
   'id': 'geojson-label',
@@ -207,7 +208,7 @@ map.addLayer({
 ```
 
 ### Rechargez et testez.
-
+![alt text](image-10.png)
 ![alt text](image-9.png)
 
 ## 8.  Versionnement avec GitHub
