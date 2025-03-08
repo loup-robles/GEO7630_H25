@@ -28,11 +28,11 @@ Ce laboratoire vous permettra d’explorer le webmapping open source à travers 
 
 Cloner le repository GitHub en utilisant Visual Studio ou la ligne de commande :
 
-git clone https://github.com/Captain-Oski/GEO7630_H24
+`git clone https://github.com/Captain-Oski/GEO7630_H25`
 
 Créez ensuite une branche personnelle pour vos modifications.
 
-git checkout -b votre_nom-labo9
+`git checkout -b votre_nom-labo9`
 
 ## 🌍 Chargement de l'application
 
@@ -51,7 +51,7 @@ Ouvrez le fichier index.html et vérifiez que l’application charge correctemen
 
 Dans le fichier lab9.js, localisez et modifiez les coordonnées et le niveau de zoom par défaut :
 
-[-73.55, 45.55]  // Coordonnées originales
+`[-73.55, 45.55]`  // Coordonnées originales
 
 Changez-les par d'autres valeurs et sauvegardez.
 
