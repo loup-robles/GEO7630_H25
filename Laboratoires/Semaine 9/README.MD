@@ -1,6 +1,6 @@
-🛰 Laboratoire 9 : Webmapping Open Source et interaction avec MapLibreGL
+# 🛰 Laboratoire 9 : Webmapping Open Source et interaction avec MapLibreGL
 
-🛠 Prérequis
+## 🛠 Prérequis
 
 ✅ Visual Studio installé et configuré.
 
@@ -8,7 +8,7 @@
 
 ✅ Navigateur Web supportant les technologies modernes (Chrome, Firefox, Edge).
 
-📋 Objectifs du laboratoire
+## 📋 Objectifs du laboratoire
 
 Ce laboratoire vous permettra d’explorer le webmapping open source à travers MapLibreGL, une librairie JavaScript permettant d’afficher des cartes interactives. Vous apprendrez à :
 
@@ -24,7 +24,7 @@ Ce laboratoire vous permettra d’explorer le webmapping open source à travers 
 
 - Utiliser GitHub pour versionner votre code.
 
-🗂 Clonage du projet
+## 🗂 Clonage du projet
 
 Cloner le repository GitHub en utilisant Visual Studio ou la ligne de commande :
 
@@ -34,7 +34,7 @@ Créez ensuite une branche personnelle pour vos modifications.
 
 git checkout -b votre_nom-labo9
 
-🌍 Chargement de l'application
+## 🌍 Chargement de l'application
 
 Accédez au répertoire du laboratoire 9.
 
@@ -45,9 +45,9 @@ Ouvrez le fichier index.html et vérifiez que l’application charge correctemen
 ![alt text](image-1.png)
 
 
-💪 Modification du code
+## Modification du code
 
-## 1.1 Modifier les coordonnées de départ
+### 1.1 Modifier les coordonnées de départ
 
 Dans le fichier lab9.js, localisez et modifiez les coordonnées et le niveau de zoom par défaut :
 
@@ -59,7 +59,7 @@ Testez votre modification en rechargeant (F5) la page web.
 
 ![alt text](image-2.png)
 
-## 1.2 Ajout du GeoJSON 
+### 1.2 Ajout du GeoJSON 
 
 Avec le bouton déjà préparé, ajoutez le fichier GeoJSON
 
@@ -67,7 +67,7 @@ Avec le bouton déjà préparé, ajoutez le fichier GeoJSON
 
 Les polygones sont bien chargés, mais avec une symbologie par défaut.
 
-## 2. Modifier la couleur des polygones
+### 2. Modifier la couleur des polygones
 
 Dans la fonction colorPolygons() (ligne 96) du fichier .js , changez :
 
@@ -81,7 +81,7 @@ Testez avec le bouton Colorier.
 
 ![alt text](image-5.png)
 
-## 3. Créer une fonction de couleur aléatoire
+### 3. Créer une fonction de couleur aléatoire
 
 Créez un nouveau fichier randomColor.js et insérez le code suivant :
 
@@ -96,18 +96,18 @@ Ajoutez-le dans index.html :
 
 <script type='text/javascript' src='./randomColor.js'></script>
 
-## 4. Appliquer une couleur aléatoire aux polygones
+### 4. Appliquer une couleur aléatoire aux polygones
 
 Modifiez la fonction colorPolygons() pour utiliser randomColor() à la place de la couleur codé en dur :
 
 'color': randomColor()
 
-### Rechargez la page et testez.
+#### Rechargez la page et testez.
 
 ![alt text](image-7.png)
 ![alt text](image-6.png)
 
-## 5. Ajouter une coloration thématique
+### 5. Ajouter une coloration thématique
 
 Remplacez randomColor() par une symbologie thématique basé sur l’attribut `operator_id` :
 
@@ -127,7 +127,7 @@ Remplacez randomColor() par une symbologie thématique basé sur l’attribut `o
 
 En MapLibreGL, cet extrait de code est utilisé pour définir une règle de style conditionnelle basée sur la propriété `operator_id` d’un ensemble de données géospatiales (comme un GeoJSON ou une couche de tuiles vectorielles).
 
-### Explication du code
+#### Explication du code
 
 - 1️⃣ property: 'operator_id'
 👉 Indique que la couleur sera déterminée en fonction de l’attribut `operator_id` des entités dans la couche, mais cela pourrait être n'importe quel attribut.
@@ -147,7 +147,7 @@ Si operator_id == 15, la couleur sera randomColor()
 👉 Appelle une fonction générant une couleur aléatoire en hexadécimal (#RRGGBB).
 Chaque valeur de `operator_id` recevra une couleur différente à **chaque rechargement**.
 
-## Utilisation dans un style MapLibreGL
+### 6. Utilisation dans un style MapLibreGL
 Ce type de paramètre est souvent utilisé dans la propriété fill-color d’un layer de type `fill` pour colorier des polygones en fonction de l’attribut `operator_id` :
 
 ```
@@ -185,7 +185,7 @@ map.addLayer({
 
 ![alt text](image-8.png)
 
-## 6. Ajouter des étiquettes aux polygones
+### 7. Ajouter des étiquettes aux polygones
 
 Dans map.addLayer(), ajoutez :`
 ```
@@ -208,7 +208,7 @@ map.addLayer({
 
 ![alt text](image-9.png)
 
-##  Versionnement avec GitHub
+## 8.  Versionnement avec GitHub
 
 Vérifiez les fichiers modifiés :
 
