@@ -38,11 +38,11 @@ git checkout -b votre_nom-labo9
 
 Accédez au répertoire du laboratoire 9.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 Ouvrez le fichier index.html et vérifiez que l’application charge correctement.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 
 ## Modification du code
@@ -57,13 +57,13 @@ Changez-les par d'autres valeurs et sauvegardez.
 
 Testez votre modification en rechargeant (F5) la page web.
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### 1.2 Ajout du GeoJSON 
 
 Avec le bouton déjà préparé, ajoutez le fichier GeoJSON
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 Les polygones sont bien chargés, mais avec une symbologie par défaut.
 
@@ -79,7 +79,7 @@ par :
 
 #### Testez avec le bouton Colorier.
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ### 3. Créer une fonction de couleur aléatoire
 
@@ -106,8 +106,8 @@ Modifiez la fonction colorPolygons() pour utiliser randomColor() à la place de 
 
 #### Rechargez la page et testez.
 
-![alt text](image-7.png)
-![alt text](image-6.png)
+![alt text](images/image-7.png)
+![alt text](images/image-6.png)
 
 ### 5. Ajouter une coloration thématique
 
@@ -185,7 +185,7 @@ map.addLayer({
 - La couleur sera aléatoire à chaque exécution de l’application.
 - Une valeur operator_id inconnue recevra la couleur noire (#000000).
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ### 7. Ajouter des étiquettes aux polygones
 
@@ -208,8 +208,8 @@ map.addLayer({
 ```
 
 ### Rechargez et testez.
-![alt text](image-10.png)
-![alt text](image-9.png)
+![alt text](images/image-10.png)
+![alt text](images/image-9.png)
 
 ## 8.  Versionnement avec GitHub
 
