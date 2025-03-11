@@ -27,12 +27,10 @@ Le TP3 doit être organisé comme suit :
 ```plaintext
 Atlas/app/equipe-X/
 ├── README.md          # Présentation de l'application
-├── code/              # Code JavaScript
-│   ├── main.js        # Script principal
-│   ├── layers.js      # Gestion des couches
-│   └── styles.css     # Styles UI/UX
-├── images/            # Captures d'écran et autres visuels
-└── presentation/      # Présentation powerpoint ou pdf (ou vidéo enregistrée)
+├── main.js        # Script principal
+├── layers.js      # Gestion des couches
+├── styles.css     # Styles UI/UX
+└── images/            # Captures d'écran et autres visuels
 ```
 
 ### **2. Développement de l'application**
