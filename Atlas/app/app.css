@@ -39,8 +39,8 @@
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         position: absolute;
         width: 200px;
-        bottom: 20%;
-        left: 13%;
+        top: 10%;
+        /* left: 13%; */
         padding: 10px;
     }
 
