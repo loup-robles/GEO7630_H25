@@ -27,4 +27,17 @@ services:
       - ../Laboratoires/Lab 11/:/usr/share/nginx/html/modules/lab11
       - ../Exam/Exam2/:/usr/share/nginx/html/exam2
     restart: always
+  geoserver:
+    image: kartoza/geoserver:2.22.2
+    ports:
+      - 8080:8080
+    environment:
+      - GEOSERVER_ADMIN_USER=admin
+      - GEOSERVER_ADMIN_PASSWORD=geoserver
+      - GEOSERVER_DATA_DIR=/opt/geoserver/data_dir
+      - GEOSERVER_CONTEXT_PATH=/geoserver
+      - PROXY_BASE_URL=https://special-train-gv4r9g5gj4cvp7-8080.app.github.dev/geoserver
+    volumes:
+      - ./geoserver_data:/opt/geoserver/data_dir
+    restart: always
   
