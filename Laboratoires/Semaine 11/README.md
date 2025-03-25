@@ -1,6 +1,8 @@
 # 🧪 Lab 11 – Cartographie interactive avec MapLibreGL
 
-Ce laboratoire vous guide étape par étape dans la construction d'une **application web de cartographie interactive** utilisant MapLibreGL, les données ouvertes de Montréal, ainsi que des événements souris et des symboles dynamiques.
+Ce laboratoire NE vous guide étape par étape dans la construction d'une **application web de cartographie interactive**.
+
+Il vous donne l'architecture de l'application et vous donne les grandes étapes
 
 ---
 
@@ -18,8 +20,7 @@ Ce laboratoire vous guide étape par étape dans la construction d'une **applica
 
 📄 Fichier : `map-controls.js`
 
-Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de carte 
-
+Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de carte (var map = new maplibregl.Map , var control = map.NavigationControl(...) etc...)
 - Création de la carte MapLibreGL
 - Définition du fond de carte via MapTiler
 - Ajout des contrôles :
@@ -33,12 +34,35 @@ Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de
 
 📄 Fichier : `map-layers.js`
 
-Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de carte 
+
+Créez un fichier `map-layers.js` et créer les layers sous forme de variable objet :
+
+ex :
+
+```
+// Définition de la source GeoJSON
+var commercesSource = {
+    type: 'geojson',
+    data: 'https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/ece728c7-6f2d-4a51-a36d-21cd70e0ddc7/download/businesses.geojson'
+  };
+  
+  // Définition de la couche avec symbologie par type de commerce
+  var commercesLayer = {
+    id: 'commerces',
+    type: 'circle',
+    source: 'commerces_source'
+    etc....
+  };
+
+```
 
 
 1. **Commerces** :
-   - Source GeoJSON dynamique depuis Montréal `https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/ece728c7-6f2d-4a51-a36d-21cd70e0ddc7/download/businesses.geojson`
+   - Source GeoJSON dynamique depuis Montréal Source GeoJSON via données ouvertes ou pgfeatureserv ou pgtileserv
+   ex : `https://donnees.montreal.ca/dataset/c1d65779-d3cb-44e8-af0a-b9f2c5f7766d/resource/ece728c7-6f2d-4a51-a36d-21cd70e0ddc7/download/businesses.geojson`
    - Couleur et taille variables selon le `type` de commerce
+
+Configuration souhaitée :
 
 ```
  paint: {
@@ -69,7 +93,7 @@ Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de
     }
 ```
 
-   - Filtrage pour ne garder que ceux au statut `"Ouvert"`
+   - Filtrage pour ne garder que ceux au statut `"Ouvert"` (Ajoutez le à la suite du "paint" configuration)
 
 ```
     filter: ['==', ['get', 'statut'], 'Ouvert']
@@ -77,9 +101,9 @@ Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de
 
 
 2. **Arrondissements** :
-   - Source GeoJSON via pgFeatureServ
+   - Source GeoJSON via données ouvertes ou pgfeatureserv ou pgtileserv
    - Polygones avec contour noir, remplissage semi-transparent
-   - Labels centrés par arrondissement (`nom`)
+   - Labels centrés par arrondissement sur la propriété : `nom`
 
 ```
  layout: {
@@ -101,15 +125,14 @@ Créez un fichier `map-controls.js` et injecter y la carte et les controleurs de
 
 📄 Fichier : `app.js`
 
-Créez un fichier `app.js` et injecter y la carte et les controleurs de carte 
-
+Créez un fichier `app.js` et injecter les layers précédement créer dans le `map-layers.js`
 
 - Ajout des sources et des couches :
   - `commerces_source` → `commerces`
   - `arrondissements-source` → `arrondissements`, `arrondissements-labels`
 ---
 
-## 🖱️ Étape 4 – Ajout des interactions souris
+## Étape 4 – Ajout des interactions souris
 
 📄 Fichier : `mouse-controls.js`
 
@@ -122,7 +145,7 @@ Créez un fichier `mouse-controls.js` et injecter y les controleurs de souris
 
 ---
 
-## 🔧 Étape 5 – Extension possible
+## Étape 5 – Extension possible
 
 💡 Pistes d’amélioration :
 - Ajouter un sélecteur `<select>` pour filtrer dynamiquement les types de commerces
@@ -131,7 +154,7 @@ Créez un fichier `mouse-controls.js` et injecter y les controleurs de souris
 
 ---
 
-## ✅ Résultat attendu
+## Résultat attendu
 
 ![alt text](images/image2.png)
 
