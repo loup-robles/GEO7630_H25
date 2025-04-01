@@ -15,8 +15,6 @@ function loadTeam(teamName) {
     document.getElementById('Equipe3').innerHTML = '';
     document.getElementById('Equipe4').innerHTML = '';
     document.getElementById('Equipe5').innerHTML = '';
-    document.getElementById('Equipe6').innerHTML = '';
-    document.getElementById('Equipe7').innerHTML = '';
     // Charger le contenu de l'équipe sélectionnée
     fetch('./' + teamName + '/index.html')
         .then(response => {
