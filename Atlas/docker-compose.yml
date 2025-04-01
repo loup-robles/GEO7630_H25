@@ -23,7 +23,6 @@ services:
       - 8000:80
     volumes:
       - ./app/:/usr/share/nginx/html
-      - ../Laboratoires/Semaine 12/modules:/usr/share/nginx/html/modules/lab12
     restart: always
   # geoserver:
   #   image: kartoza/geoserver:2.22.2
