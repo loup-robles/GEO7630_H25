@@ -38,12 +38,8 @@ function union() {
         const hexgrid = turf.hexGrid(bbox, cellSide, options);
         // Compter le nombre de points dans chaque cellule de la grille
         const joined = countPointsInPolygons(randomPoints, hexgrid)
-        map.addSource('grid-source', {
-            type: "geojson",
-            data: joined
-  
-        })
-  
+        console.log(joined)
+
         map.addLayer({
             id: 'joined',
             type: 'fill',

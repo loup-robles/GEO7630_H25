@@ -7,6 +7,11 @@ var map = new maplibregl.Map({
     hash: true // activation du hash pour la gestion de l'historique de la carte
 });
 
+////////////////// Lab 11 ////////////////////
+// map.addSource('arrondissementsSource', arrondissementsSource); // Ajout de la source
+// map.addLayer(arrondissementsLayer); // Ajout de la couche des arrondissements
+// map.addLayer(arrondissementsLabelsLayer);
+//////////////////////////////////////////////
 
 function loadTeam(teamName) {
     // Vider toutes les divs
@@ -52,7 +57,6 @@ map.on('load', function () {
 
 // Cette fonction est appelée lorsque la carte est en attente de fin de motion
 map.on('idle', function () {
-    console.log('moveend')
     // Récupère les couches de style de la carte.
     const layers = map.getStyle().layers;
     // Parcourt toutes les couches.
