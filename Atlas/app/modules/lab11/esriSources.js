@@ -32,18 +32,18 @@ map.on('load', function () {
 
     // const wfsUrl = 'https://dservices6.arcgis.com/133a00biU9FItiqJ/arcgis/services/indice_emv_2024_demo/WFSServer?service=wfs&request=getcapabilities';
 
-    map.addSource('wfs-source', {
-        type: 'geojson',
-        data: 'https://dservices6.arcgis.com/133a00biU9FItiqJ/arcgis/services/indice_emv_2024_demo/WFSServer?service=wfs&request=GetFeature&typename=indice_emv_2024_demo:indice_emv_2024_demo_polygons&version=2.0.0&outputFormat=GEOJSON'
-    });
+    // map.addSource('wfs-source', {
+    //     type: 'geojson',
+    //     data: 'https://dservices6.arcgis.com/133a00biU9FItiqJ/arcgis/services/indice_emv_2024_demo/WFSServer?service=wfs&request=GetFeature&typename=indice_emv_2024_demo:indice_emv_2024_demo_polygons&version=2.0.0&outputFormat=GEOJSON'
+    // });
 
-    map.addLayer({
-        id: 'wfs-layer',
-        type: 'fill',
-        source: 'wfs-source',
-        paint: {
-            'fill-color': '#888888',
-            'fill-opacity': 0.5
-        }
-    });
+    // map.addLayer({
+    //     id: 'wfs-layer',
+    //     type: 'fill',
+    //     source: 'wfs-source',
+    //     paint: {
+    //         'fill-color': '#888888',
+    //         'fill-opacity': 0.5
+    //     }
+    // });
 });

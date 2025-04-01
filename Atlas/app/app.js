@@ -50,8 +50,9 @@ map.on('load', function () {
     // }, { onlyRendered: true }), "bottom-left");
 });
 
-// Cette fonction est appelée lorsque la carte est en attente.
+// Cette fonction est appelée lorsque la carte est en attente de fin de motion
 map.on('idle', function () {
+    console.log('moveend')
     // Récupère les couches de style de la carte.
     const layers = map.getStyle().layers;
     // Parcourt toutes les couches.
