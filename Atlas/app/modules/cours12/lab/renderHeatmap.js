@@ -10,7 +10,7 @@ function generateHeatmap() {
     map.addLayer({
         id: 'heatmap',
         source: 'heatmap-source',
-        type: 'heatmap',
+        type: _________,
         paint: {
             'heatmap-weight': ['get', 'point_count'],   // Poids des points basé sur 'point_count'
             'heatmap-radius': 20,                       // Rayon des points de chaleur du heatmap
@@ -31,5 +31,5 @@ function generateHeatmap() {
 }
 
 document
-  .getElementById('generateHeatmap') // id unique du bouton
-  .addEventListener('click', generateHeatmap); // ajoute un event de type click qui lance la fonction generateHeatmap()
+  .getElementById(_________) // id unique du bouton
+  .addEventListener(__________, ______________); // ajoute un event de type click qui lance la fonction generateHeatmap()
