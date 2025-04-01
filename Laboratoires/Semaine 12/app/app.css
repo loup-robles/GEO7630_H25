@@ -1,60 +1,53 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #map {
+        position:absolute;
+        right:0;
+        top:0;
+        bottom:0;
+        height: 100vh;
+        width: 100%;
+    }
 
-#map {
-    position:absolute;
-    top:4.5%;
-    height: -webkit-fill-available;   
-    width: 75%;
-}
+    #bottomMenu {
+        position:absolute;
+        right:23%;
+        /* top:0; */
+        bottom:0%;
+        height: 20%;  
+        width: 65%;
+        background-color: red;
+    }
 
-#menu {
-    position: absolute;
-    top:4.5%;
-    right: 0;
-    width: 25%;
-}
+    
+    #rightMenu {
+        position:absolute;
+        right:0%;
+        /* top:0; */
+        bottom:0%;
+        height: 100vh;  
+        width: 23%;
+        background-color: blueviolet;
 
-#titre {
-    padding: 20px;
-}
-#menu2 {
-    position: absolute;
-    top:4.5%;
-    left: 0;
-    width: 25%;
-}
+    }
 
-#menu3 {
-    position: relative;
-    top: 60%;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-}
 
-#boite {
-    margin: 10px;
-    padding: 20px;
-    background: ligthgrey;
-}
+    .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 200px;
+        top: 10%;
+        /* left: 13%; */
+        padding: 10px;
+    }
 
-#boite2 {
-    margin: 10px;
-    padding: 20px;
-    background: ligthgrey;
-}
-
-#bouton1 {
-    padding: 20px
-}
-
-#bouton2 {
-    padding: 20px
-}
-
-#bouton3 {
-    padding: 20px
-}
+    .map-overlay .map-overlay-inner {
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
