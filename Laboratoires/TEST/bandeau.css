@@ -1,0 +1,8 @@
+#header {
+    font-family: 'DIN'; /* Police moderne (modifiable) */
+    font-size: 12px; /* Taille du texte */
+    font-weight: normal; /* Texte en gras */
+    text-transform: uppercase; /* Met le titre en majuscules */
+    letter-spacing: 1.5px; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre pour plus de lisibilité */
+  }

@@ -1,72 +1,30 @@
-<!DOCTYPE html> 
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carte interactive – Montréal</title>
+
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="styles.css">
+
   <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+</head>
+
   <style>
     body, html { margin: 0; padding: 0; height: 100%; }
-    #map { width: 100%; height: calc(100vh - 50px); margin-top: 50px; }
-    
-    /* Bandeau en haut */
-    #header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background: #333;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    
-    /* Style pour le bouton de contrôle de la couche */
-    #toggleCommerces {
-      position: absolute;
-      top: 60px;
-      left: 10px;
-      background: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-      border: none;
-    }
+    #map { width: 100%; height: 100vh; }
   </style>
 </head>
 <body>
-  <div id="header">Carte interactive – Montréal</div>
   <div id="map"></div>
-  
-  <!-- Bouton pour activer/désactiver la couche commerces -->
-  <button id="toggleCommerces">Afficher Commerces</button>
-  
+ 
   <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
   <script src="./map-controls.js"></script>
   <script src="./map-layers.js"></script>
   <script src="./app.js"></script>
   <script src="./mouse-controls.js"></script>
-  
-  <script>
-    map.on('load', function () {
-      const toggleButton = document.getElementById('toggleCommerces');
-      let isVisible = true;
-      
-      // Vérifier si la couche commerces existe
-      if (map.getLayer("commerces")) {
-        toggleButton.addEventListener('click', function () {
-          isVisible = !isVisible;
-          const visibility = isVisible ? 'visible' : 'none';
-          map.setLayoutProperty("commerces", 'visibility', visibility);
-          toggleButton.textContent = isVisible ? "Masquer Commerces" : "Afficher Commerces";
-        });
-      }
-    });
-  </script>
 </body>
 </html>
