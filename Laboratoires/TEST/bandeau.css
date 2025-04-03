@@ -1,8 +1,50 @@
+/* Réinitialisation du style */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+ 
+/* Ajustement pour que la carte prenne tout l'écran sans être cachée par le bandeau */
+#map {
+  width: 100%;
+  height: calc(100vh - 30px);
+  margin-top: 50px;
+}
+ 
+/* Bandeau en haut */
 #header {
-    font-family: 'DIN'; /* Police moderne (modifiable) */
-    font-size: 12px; /* Taille du texte */
-    font-weight: normal; /* Texte en gras */
-    text-transform: uppercase; /* Met le titre en majuscules */
-    letter-spacing: 1.5px; /* Espacement entre les lettres */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre pour plus de lisibilité */
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: hsla(41, 91%, 54%, 0.699);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Style du titre dans le bandeau */
+#header-title {
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'DIN';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+ 
+/* Style pour le bouton de contrôle de la couche */
+#toggleCommerces {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  background: rgb(255, 255, 255);
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(247, 241, 241, 0.3);
+  cursor: pointer;
+  border: none;
+}
